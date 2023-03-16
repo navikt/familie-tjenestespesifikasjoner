@@ -1,7 +1,7 @@
 
 package no.nav.okonomi.tilbakekrevingservice;
 
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
@@ -38,38 +38,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link KravgrunnlagHentListeResponse }
-     * 
-     */
-    public KravgrunnlagHentListeResponse createKravgrunnlagHentListeResponse() {
-        return new KravgrunnlagHentListeResponse();
-    }
-
-    /**
-     * Create an instance of {@link KravgrunnlagAnnulerResponse }
-     * 
-     */
-    public KravgrunnlagAnnulerResponse createKravgrunnlagAnnulerResponse() {
-        return new KravgrunnlagAnnulerResponse();
-    }
-
-    /**
-     * Create an instance of {@link KravgrunnlagAnnulerRequest }
-     * 
-     */
-    public KravgrunnlagAnnulerRequest createKravgrunnlagAnnulerRequest() {
-        return new KravgrunnlagAnnulerRequest();
-    }
-
-    /**
-     * Create an instance of {@link KravgrunnlagHentDetaljResponse }
-     * 
-     */
-    public KravgrunnlagHentDetaljResponse createKravgrunnlagHentDetaljResponse() {
-        return new KravgrunnlagHentDetaljResponse();
-    }
-
-    /**
      * Create an instance of {@link TilbakekrevingsvedtakResponse }
      * 
      */
@@ -86,11 +54,43 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link KravgrunnlagHentListeResponse }
+     * 
+     */
+    public KravgrunnlagHentListeResponse createKravgrunnlagHentListeResponse() {
+        return new KravgrunnlagHentListeResponse();
+    }
+
+    /**
      * Create an instance of {@link KravgrunnlagHentDetaljRequest }
      * 
      */
     public KravgrunnlagHentDetaljRequest createKravgrunnlagHentDetaljRequest() {
         return new KravgrunnlagHentDetaljRequest();
+    }
+
+    /**
+     * Create an instance of {@link KravgrunnlagHentDetaljResponse }
+     * 
+     */
+    public KravgrunnlagHentDetaljResponse createKravgrunnlagHentDetaljResponse() {
+        return new KravgrunnlagHentDetaljResponse();
+    }
+
+    /**
+     * Create an instance of {@link KravgrunnlagAnnulerRequest }
+     * 
+     */
+    public KravgrunnlagAnnulerRequest createKravgrunnlagAnnulerRequest() {
+        return new KravgrunnlagAnnulerRequest();
+    }
+
+    /**
+     * Create an instance of {@link KravgrunnlagAnnulerResponse }
+     * 
+     */
+    public KravgrunnlagAnnulerResponse createKravgrunnlagAnnulerResponse() {
+        return new KravgrunnlagAnnulerResponse();
     }
 
 }

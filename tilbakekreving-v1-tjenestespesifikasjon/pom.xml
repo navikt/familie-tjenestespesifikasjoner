@@ -11,4 +11,91 @@
 
     <artifactId>tilbakekreving-v1-tjenestespesifikasjon</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.xml.ws</groupId>
+            <artifactId>jakarta.xml.ws-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.threeten-jaxb</groupId>
+            <artifactId>threeten-jaxb-core</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-codegen-plugin</artifactId>
+                <version>4.0.0</version>
+                <executions>
+                    <execution>
+                        <id>generate-sources-avstemming</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <sourceRoot>${basedir}/src/main/java</sourceRoot>
+                            <wsdlOptions>
+                                <wsdlOption>
+                                    <wsdl>
+                                        ${basedir}/src/main/resources/wsdl/no/nav/tilbakekreving/tilbakekreving-v1-tjenestespesifikasjon.wsdl
+                                    </wsdl>
+                                    <wsdlLocation>classpath:wsdl/no/nav/tilbakekreving/tilbakekreving-v1-tjenestespesifikasjon.wsdl</wsdlLocation>
+                                </wsdlOption>
+                            </wsdlOptions>
+                        </configuration>
+                        <goals>
+                            <goal>wsdl2java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-xjc-plugin</artifactId>
+                <version>4.0.0</version>
+                <executions>
+                    <execution>
+                        <id>xjc</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>xsdtojava</goal>
+                        </goals>
+                        <configuration>
+                            <sourceRoot>${basedir}/src/main/java</sourceRoot>
+                            <xsdOptions>
+                                <xsdOption>
+                                    <extension>true</extension>
+                                    <xsd>${basedir}/src/main/resources/wsdl/no/nav/tilbakekreving/xsd/kravgrunnlag_detalj.xsd</xsd>
+                                    <bindingFile>
+                                        ${basedir}/src/main/resources/binding.xml
+                                    </bindingFile>
+                                </xsdOption>
+                                <xsdOption>
+                                    <extension>true</extension>
+                                    <xsd>${basedir}/src/main/resources/wsdl/no/nav/tilbakekreving/xsd/kravgrunnlag_liste.xsd</xsd>
+                                    <bindingFile>
+                                        ${basedir}/src/main/resources/binding.xml
+                                    </bindingFile>
+                                </xsdOption>
+                                <xsdOption>
+                                    <extension>true</extension>
+                                    <xsd>${basedir}/src/main/resources/wsdl/no/nav/tilbakekreving/xsd/tilbakekrevingsvedtak.xsd</xsd>
+                                    <bindingFile>
+                                        ${basedir}/src/main/resources/binding.xml
+                                    </bindingFile>
+                                </xsdOption>
+                            </xsdOptions>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
