@@ -14,6 +14,7 @@
         <module>tilbakekreving-v1-tjenestespesifikasjon</module>
         <module>nav-system-os-simuler-fp-service-tjenestespesifikasjon</module>
         <module>tss</module>
+        <module>nav-virksomhet-oppdragsbehandling-v1-meldingsdefinisjon</module>
     </modules>
 
     <properties>
