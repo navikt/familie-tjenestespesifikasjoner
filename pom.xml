@@ -10,7 +10,8 @@
     <version>${revision}${sha1}${changelist}</version>
 
     <modules>
-        <module>no.nav.virksomhet.tjenester.avstemming-v1-tjenestespesifikasjon</module>
+        <module>avstemming-v1-tjenestespesifikasjon</module>
+        <module>tilbakekreving-v1-tjenestespesifikasjon</module>
     </modules>
 
     <properties>
