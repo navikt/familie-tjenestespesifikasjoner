@@ -1,8 +1,7 @@
-name: Build-Deploy
+name: Build
 on:
-  push:
-    branches-ignore:
-      - 'master'
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build-and-deploy-artifact:
