@@ -1,39 +1,39 @@
 
 package no.nav.virksomhet.tjenester.avstemming.informasjon.konsistensavstemmingsdata.v1;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * Enhver avstemming må initieres og avsluttes med en 110-record, på det formatet som er beskrevet her
+ * Enhver no.nav.virksomhet.tjenester.avstemming må initieres og avsluttes med en 110-record, på det formatet som er beskrevet her
  * 
  * <p>Java class for Aksjonsdata complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="Aksjonsdata">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="aksjonsType" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="kildeType" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="avstemmingType" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="avleverendeKomponentKode" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="mottakendeKomponentKode" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="underkomponentKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="nokkelFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="nokkelTom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="tidspunktAvstemmingTom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="avleverendeAvstemmingId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="brukerId" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Aksjonsdata"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="aksjonsType" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="kildeType" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="avstemmingType" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="avleverendeKomponentKode" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="mottakendeKomponentKode" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="underkomponentKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="nokkelFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="nokkelTom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="tidspunktAvstemmingTom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="avleverendeAvstemmingId" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="brukerId" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

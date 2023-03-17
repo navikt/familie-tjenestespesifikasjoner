@@ -1,10 +1,10 @@
 
 package no.nav.virksomhet.tjenester.avstemming.informasjon.konsistensavstemmingsdata.v1;
 
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlElementDecl;
-import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.annotation.XmlElementDecl;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
@@ -34,27 +34,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SendAsynkronKonsistensavstemmingsdataRequest }
-     * 
-     */
-    public SendAsynkronKonsistensavstemmingsdataRequest createSendAsynkronKonsistensavstemmingsdataRequest() {
-        return new SendAsynkronKonsistensavstemmingsdataRequest();
-    }
-
-    /**
      * Create an instance of {@link Konsistensavstemmingsdata }
      * 
      */
     public Konsistensavstemmingsdata createKonsistensavstemmingsdata() {
         return new Konsistensavstemmingsdata();
-    }
-
-    /**
-     * Create an instance of {@link Periode }
-     * 
-     */
-    public Periode createPeriode() {
-        return new Periode();
     }
 
     /**
@@ -74,11 +58,35 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Grad }
+     * Create an instance of {@link Belopsgrense }
      * 
      */
-    public Grad createGrad() {
-        return new Grad();
+    public Belopsgrense createBelopsgrense() {
+        return new Belopsgrense();
+    }
+
+    /**
+     * Create an instance of {@link Periode }
+     * 
+     */
+    public Periode createPeriode() {
+        return new Periode();
+    }
+
+    /**
+     * Create an instance of {@link Aksjonsdata }
+     * 
+     */
+    public Aksjonsdata createAksjonsdata() {
+        return new Aksjonsdata();
+    }
+
+    /**
+     * Create an instance of {@link Totaldata }
+     * 
+     */
+    public Totaldata createTotaldata() {
+        return new Totaldata();
     }
 
     /**
@@ -90,27 +98,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Tekst }
+     * Create an instance of {@link Grad }
      * 
      */
-    public Tekst createTekst() {
-        return new Tekst();
-    }
-
-    /**
-     * Create an instance of {@link Belopsgrense }
-     * 
-     */
-    public Belopsgrense createBelopsgrense() {
-        return new Belopsgrense();
-    }
-
-    /**
-     * Create an instance of {@link Aksjonsdata }
-     * 
-     */
-    public Aksjonsdata createAksjonsdata() {
-        return new Aksjonsdata();
+    public Grad createGrad() {
+        return new Grad();
     }
 
     /**
@@ -130,16 +122,28 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Totaldata }
+     * Create an instance of {@link Tekst }
      * 
      */
-    public Totaldata createTotaldata() {
-        return new Totaldata();
+    public Tekst createTekst() {
+        return new Tekst();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Konsistensavstemmingsdata }{@code >}}
+     * Create an instance of {@link SendAsynkronKonsistensavstemmingsdataRequest }
      * 
+     */
+    public SendAsynkronKonsistensavstemmingsdataRequest createSendAsynkronKonsistensavstemmingsdataRequest() {
+        return new SendAsynkronKonsistensavstemmingsdataRequest();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Konsistensavstemmingsdata }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link Konsistensavstemmingsdata }{@code >}
      */
     @XmlElementDecl(namespace = "http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1", name = "konsistensavstemmingsdata")
     public JAXBElement<Konsistensavstemmingsdata> createKonsistensavstemmingsdata(Konsistensavstemmingsdata value) {

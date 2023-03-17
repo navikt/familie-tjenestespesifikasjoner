@@ -1,7 +1,7 @@
 
 package no.nav.virksomhet.tjenester.avstemming.v1;
 
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
@@ -30,14 +30,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SendAsynkronKonsistensavstemmingsdataResponse }
-     * 
-     */
-    public SendAsynkronKonsistensavstemmingsdataResponse createSendAsynkronKonsistensavstemmingsdataResponse() {
-        return new SendAsynkronKonsistensavstemmingsdataResponse();
-    }
-
-    /**
      * Create an instance of {@link SendAsynkronAvstemmingsdata }
      * 
      */
@@ -59,6 +51,14 @@ public class ObjectFactory {
      */
     public SendAsynkronKonsistensavstemmingsdata createSendAsynkronKonsistensavstemmingsdata() {
         return new SendAsynkronKonsistensavstemmingsdata();
+    }
+
+    /**
+     * Create an instance of {@link SendAsynkronKonsistensavstemmingsdataResponse }
+     * 
+     */
+    public SendAsynkronKonsistensavstemmingsdataResponse createSendAsynkronKonsistensavstemmingsdataResponse() {
+        return new SendAsynkronKonsistensavstemmingsdataResponse();
     }
 
 }

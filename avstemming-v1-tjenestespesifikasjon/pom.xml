@@ -11,4 +11,48 @@
 
     <artifactId>avstemming-v1-tjenestespesifikasjon</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.xml.ws</groupId>
+            <artifactId>jakarta.xml.ws-api</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-codegen-plugin</artifactId>
+                <version>4.0.0</version>
+                <executions>
+                    <execution>
+                        <id>generate-sources-avstemming</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <sourceRoot>${basedir}/src/main/java</sourceRoot>
+                            <wsdlOptions>
+                                <wsdlOption>
+                                    <wsdl>${basedir}/src/main/resources/wsdl/no/nav/virksomhet/tjenester/avstemming/avstemming.wsdl</wsdl>
+                                    <wsdlLocation>classpath:wsdl/no/nav/virksomhet/tjenester/avstemming/avstemming.wsdl</wsdlLocation>
+                                    <bindingFiles>
+                                        <bindingFile>
+                                            ${basedir}//src/main/resources/wsdl/no/nav/virksomhet/tjenester/avstemming/v1/Binding.wsdl
+                                        </bindingFile>
+                                    </bindingFiles>
+                                </wsdlOption>
+                            </wsdlOptions>
+                        </configuration>
+                        <goals>
+                            <goal>wsdl2java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
