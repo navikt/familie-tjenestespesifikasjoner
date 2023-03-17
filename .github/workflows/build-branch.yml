@@ -1,0 +1,23 @@
+name: Build-Deploy
+on:
+  push:
+    branches-ignore:
+      - 'master'
+
+jobs:
+  build-and-deploy-artifact:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'maven'
+      - name: Build with Maven
+        env:
+          GITHUB_USERNAME: x-access-token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: mvn --no-transfer-progress package
