@@ -1,23 +1,22 @@
 
 package no.nav.system.os.entiteter.typer.simpletypes;
 
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
  * <p>Java class for kodeArbeidsgiver.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
  * <pre>
- * &lt;simpleType name="kodeArbeidsgiver">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="A"/>
- *     &lt;enumeration value="S"/>
- *     &lt;enumeration value="P"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="kodeArbeidsgiver"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="A"/&gt;
+ *     &lt;enumeration value="S"/&gt;
+ *     &lt;enumeration value="P"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

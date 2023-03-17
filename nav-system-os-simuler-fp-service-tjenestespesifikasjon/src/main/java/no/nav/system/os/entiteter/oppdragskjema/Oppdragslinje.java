@@ -3,11 +3,12 @@ package no.nav.system.os.entiteter.oppdragskjema;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSeeAlso;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlSeeAlso;
+import jakarta.xml.bind.annotation.XmlType;
 import no.nav.system.os.entiteter.typer.simpletypes.FradragTillegg;
 import no.nav.system.os.entiteter.typer.simpletypes.KodeArbeidsgiver;
 import no.nav.system.os.entiteter.typer.simpletypes.KodeStatusLinje;
@@ -21,57 +22,57 @@ import no.nav.system.os.entiteter.typer.simpletypes.KodeStatusLinje;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="oppdragslinje">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="kodeEndringLinje">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="NY"/>
- *               &lt;enumeration value="ENDR"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="kodeStatusLinje" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeStatusLinje" minOccurs="0"/>
- *         &lt;element name="datoStatusFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
- *         &lt;element name="vedtakId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}vedtakId" minOccurs="0"/>
- *         &lt;element name="delytelseId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}delytelseId" minOccurs="0"/>
- *         &lt;element name="linjeId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}linjeId" minOccurs="0"/>
- *         &lt;element name="kodeKlassifik" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeKlassifik"/>
- *         &lt;element name="datoKlassifikFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
- *         &lt;element name="datoVedtakFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/>
- *         &lt;element name="datoVedtakTom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
- *         &lt;element name="sats" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}sats"/>
- *         &lt;element name="fradragTillegg" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fradragTillegg"/>
- *         &lt;element name="typeSats" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}typeSats"/>
- *         &lt;element name="skyldnerId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr" minOccurs="0"/>
- *         &lt;element name="datoSkyldnerFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
- *         &lt;element name="kravhaverId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr" minOccurs="0"/>
- *         &lt;element name="datoKravhaverFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
- *         &lt;element name="kid" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kid" minOccurs="0"/>
- *         &lt;element name="datoKidFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
- *         &lt;element name="brukKjoreplan" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}brukKjoreplan" minOccurs="0"/>
- *         &lt;element name="saksbehId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}saksbehId"/>
- *         &lt;element name="utbetalesTilId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/>
- *         &lt;element name="datoUtbetalesTilIdFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
- *         &lt;element name="kodeArbeidsgiver" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeArbeidsgiver" minOccurs="0"/>
- *         &lt;element name="henvisning" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}henvisning" minOccurs="0"/>
- *         &lt;element name="typeSoknad" minOccurs="0">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="10"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="refFagsystemId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fagsystemId" minOccurs="0"/>
- *         &lt;element name="refOppdragsId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}oppdragsId" minOccurs="0"/>
- *         &lt;element name="refDelytelseId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}delytelseId" minOccurs="0"/>
- *         &lt;element name="refLinjeId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}linjeId" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="oppdragslinje"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="kodeEndringLinje"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="NY"/&gt;
+ *               &lt;enumeration value="ENDR"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="kodeStatusLinje" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeStatusLinje" minOccurs="0"/&gt;
+ *         &lt;element name="datoStatusFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
+ *         &lt;element name="vedtakId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}vedtakId" minOccurs="0"/&gt;
+ *         &lt;element name="delytelseId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}delytelseId" minOccurs="0"/&gt;
+ *         &lt;element name="linjeId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}linjeId" minOccurs="0"/&gt;
+ *         &lt;element name="kodeKlassifik" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeKlassifik"/&gt;
+ *         &lt;element name="datoKlassifikFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
+ *         &lt;element name="datoVedtakFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/&gt;
+ *         &lt;element name="datoVedtakTom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
+ *         &lt;element name="sats" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}sats"/&gt;
+ *         &lt;element name="fradragTillegg" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fradragTillegg"/&gt;
+ *         &lt;element name="typeSats" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}typeSats"/&gt;
+ *         &lt;element name="skyldnerId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr" minOccurs="0"/&gt;
+ *         &lt;element name="datoSkyldnerFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
+ *         &lt;element name="kravhaverId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr" minOccurs="0"/&gt;
+ *         &lt;element name="datoKravhaverFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
+ *         &lt;element name="kid" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kid" minOccurs="0"/&gt;
+ *         &lt;element name="datoKidFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
+ *         &lt;element name="brukKjoreplan" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}brukKjoreplan" minOccurs="0"/&gt;
+ *         &lt;element name="saksbehId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}saksbehId"/&gt;
+ *         &lt;element name="utbetalesTilId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/&gt;
+ *         &lt;element name="datoUtbetalesTilIdFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
+ *         &lt;element name="kodeArbeidsgiver" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeArbeidsgiver" minOccurs="0"/&gt;
+ *         &lt;element name="henvisning" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}henvisning" minOccurs="0"/&gt;
+ *         &lt;element name="typeSoknad" minOccurs="0"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="10"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="refFagsystemId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fagsystemId" minOccurs="0"/&gt;
+ *         &lt;element name="refOppdragsId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}oppdragsId" minOccurs="0"/&gt;
+ *         &lt;element name="refDelytelseId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}delytelseId" minOccurs="0"/&gt;
+ *         &lt;element name="refLinjeId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}linjeId" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -116,6 +117,7 @@ public class Oppdragslinje {
 
     @XmlElement(required = true)
     protected String kodeEndringLinje;
+    @XmlSchemaType(name = "string")
     protected KodeStatusLinje kodeStatusLinje;
     protected String datoStatusFom;
     protected String vedtakId;
@@ -130,6 +132,7 @@ public class Oppdragslinje {
     @XmlElement(required = true)
     protected BigDecimal sats;
     @XmlElement(required = true)
+    @XmlSchemaType(name = "string")
     protected FradragTillegg fradragTillegg;
     @XmlElement(required = true)
     protected String typeSats;
@@ -145,6 +148,7 @@ public class Oppdragslinje {
     @XmlElement(required = true)
     protected String utbetalesTilId;
     protected String datoUtbetalesTilIdFom;
+    @XmlSchemaType(name = "string")
     protected KodeArbeidsgiver kodeArbeidsgiver;
     protected String henvisning;
     protected String typeSoknad;

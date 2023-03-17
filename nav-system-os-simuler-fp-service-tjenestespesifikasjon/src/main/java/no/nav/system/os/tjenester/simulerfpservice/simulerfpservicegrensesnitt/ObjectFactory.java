@@ -1,10 +1,10 @@
 
 package no.nav.system.os.tjenester.simulerfpservice.simulerfpservicegrensesnitt;
 
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlElementDecl;
-import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.annotation.XmlElementDecl;
+import jakarta.xml.bind.annotation.XmlRegistry;
 import no.nav.system.os.tjenester.simulerfpservice.feil.FeilUnderBehandling;
 
 
@@ -25,8 +25,8 @@ import no.nav.system.os.tjenester.simulerfpservice.feil.FeilUnderBehandling;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _SimulerBeregningFeilUnderBehandling_QNAME = new QName("http://nav.no/system/os/tjenester/simulerFpService/simulerFpServiceGrensesnitt", "simulerBeregningFeilUnderBehandling");
     private final static QName _SendInnOppdragFeilUnderBehandling_QNAME = new QName("http://nav.no/system/os/tjenester/simulerFpService/simulerFpServiceGrensesnitt", "sendInnOppdragFeilUnderBehandling");
+    private final static QName _SimulerBeregningFeilUnderBehandling_QNAME = new QName("http://nav.no/system/os/tjenester/simulerFpService/simulerFpServiceGrensesnitt", "simulerBeregningFeilUnderBehandling");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: no.nav.system.os.tjenester.simulerfpservice.simulerfpservicegrensesnitt
@@ -36,19 +36,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SendInnOppdragResponse }
-     * 
-     */
-    public SendInnOppdragResponse createSendInnOppdragResponse() {
-        return new SendInnOppdragResponse();
-    }
-
-    /**
      * Create an instance of {@link SendInnOppdragRequest }
      * 
      */
     public SendInnOppdragRequest createSendInnOppdragRequest() {
         return new SendInnOppdragRequest();
+    }
+
+    /**
+     * Create an instance of {@link SendInnOppdragResponse }
+     * 
+     */
+    public SendInnOppdragResponse createSendInnOppdragResponse() {
+        return new SendInnOppdragResponse();
     }
 
     /**
@@ -68,21 +68,29 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link FeilUnderBehandling }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link FeilUnderBehandling }{@code >}
      * 
-     */
-    @XmlElementDecl(namespace = "http://nav.no/system/os/tjenester/simulerFpService/simulerFpServiceGrensesnitt", name = "simulerBeregningFeilUnderBehandling")
-    public JAXBElement<FeilUnderBehandling> createSimulerBeregningFeilUnderBehandling(FeilUnderBehandling value) {
-        return new JAXBElement<FeilUnderBehandling>(_SimulerBeregningFeilUnderBehandling_QNAME, FeilUnderBehandling.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link FeilUnderBehandling }{@code >}}
-     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link FeilUnderBehandling }{@code >}
      */
     @XmlElementDecl(namespace = "http://nav.no/system/os/tjenester/simulerFpService/simulerFpServiceGrensesnitt", name = "sendInnOppdragFeilUnderBehandling")
     public JAXBElement<FeilUnderBehandling> createSendInnOppdragFeilUnderBehandling(FeilUnderBehandling value) {
         return new JAXBElement<FeilUnderBehandling>(_SendInnOppdragFeilUnderBehandling_QNAME, FeilUnderBehandling.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link FeilUnderBehandling }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link FeilUnderBehandling }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://nav.no/system/os/tjenester/simulerFpService/simulerFpServiceGrensesnitt", name = "simulerBeregningFeilUnderBehandling")
+    public JAXBElement<FeilUnderBehandling> createSimulerBeregningFeilUnderBehandling(FeilUnderBehandling value) {
+        return new JAXBElement<FeilUnderBehandling>(_SimulerBeregningFeilUnderBehandling_QNAME, FeilUnderBehandling.class, null, value);
     }
 
 }

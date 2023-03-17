@@ -3,11 +3,12 @@ package no.nav.system.os.entiteter.oppdragskjema;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSeeAlso;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlSeeAlso;
+import jakarta.xml.bind.annotation.XmlType;
 import no.nav.system.os.entiteter.typer.simpletypes.KodeStatus;
 
 
@@ -19,37 +20,37 @@ import no.nav.system.os.entiteter.typer.simpletypes.KodeStatus;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="oppdrag">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="kodeEndring">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="NY"/>
- *               &lt;enumeration value="ENDR"/>
- *               &lt;enumeration value="UEND"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="kodeStatus" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeStatus" minOccurs="0"/>
- *         &lt;element name="datoStatusFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
- *         &lt;element name="kodeFagomraade" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeFagomraade"/>
- *         &lt;element name="fagsystemId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fagsystemId" minOccurs="0"/>
- *         &lt;element name="oppdragsId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}oppdragsId" minOccurs="0"/>
- *         &lt;element name="utbetFrekvens" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}utbetFrekvens" minOccurs="0"/>
- *         &lt;element name="datoForfall" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
- *         &lt;element name="stonadId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}stonadId" minOccurs="0"/>
- *         &lt;element name="oppdragGjelderId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/>
- *         &lt;element name="datoOppdragGjelderFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/>
- *         &lt;element name="saksbehId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}saksbehId"/>
- *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}enhet" maxOccurs="2" minOccurs="0"/>
- *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}belopsgrense" maxOccurs="50" minOccurs="0"/>
- *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}tekst" maxOccurs="50" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="oppdrag"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="kodeEndring"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;enumeration value="NY"/&gt;
+ *               &lt;enumeration value="ENDR"/&gt;
+ *               &lt;enumeration value="UEND"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="kodeStatus" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeStatus" minOccurs="0"/&gt;
+ *         &lt;element name="datoStatusFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
+ *         &lt;element name="kodeFagomraade" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeFagomraade"/&gt;
+ *         &lt;element name="fagsystemId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fagsystemId" minOccurs="0"/&gt;
+ *         &lt;element name="oppdragsId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}oppdragsId" minOccurs="0"/&gt;
+ *         &lt;element name="utbetFrekvens" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}utbetFrekvens" minOccurs="0"/&gt;
+ *         &lt;element name="datoForfall" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
+ *         &lt;element name="stonadId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}stonadId" minOccurs="0"/&gt;
+ *         &lt;element name="oppdragGjelderId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/&gt;
+ *         &lt;element name="datoOppdragGjelderFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/&gt;
+ *         &lt;element name="saksbehId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}saksbehId"/&gt;
+ *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}enhet" maxOccurs="2" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}belopsgrense" maxOccurs="50" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}tekst" maxOccurs="50" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -79,6 +80,7 @@ public class Oppdrag {
 
     @XmlElement(required = true)
     protected String kodeEndring;
+    @XmlSchemaType(name = "string")
     protected KodeStatus kodeStatus;
     protected String datoStatusFom;
     @XmlElement(required = true)
@@ -395,7 +397,7 @@ public class Oppdrag {
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
+     * returned list will be present inside the Jakarta XML Binding object.
      * This is why there is not a <CODE>set</CODE> method for the enhet property.
      * 
      * <p>
@@ -424,7 +426,7 @@ public class Oppdrag {
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
+     * returned list will be present inside the Jakarta XML Binding object.
      * This is why there is not a <CODE>set</CODE> method for the belopsgrense property.
      * 
      * <p>
@@ -453,7 +455,7 @@ public class Oppdrag {
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
+     * returned list will be present inside the Jakarta XML Binding object.
      * This is why there is not a <CODE>set</CODE> method for the tekst property.
      * 
      * <p>

@@ -1,9 +1,9 @@
 
 package no.nav.system.os.tjenester.simulerfpservice.feil;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
@@ -14,12 +14,12 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="feilUnderBehandling">
- *   &lt;complexContent>
- *     &lt;extension base="{http://nav.no/system/os/tjenester/simulerFpService/feil}StelvioFault">
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="feilUnderBehandling"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://nav.no/system/os/tjenester/simulerFpService/feil}StelvioFault"&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

@@ -3,10 +3,10 @@ package no.nav.system.os.tjenester.simulerfpservice.simulerfpserviceservicetypes
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlType;
 import no.nav.system.os.entiteter.oppdragskjema.Attestant;
 import no.nav.system.os.entiteter.oppdragskjema.Enhet;
 import no.nav.system.os.entiteter.oppdragskjema.Grad;
@@ -21,20 +21,20 @@ import no.nav.system.os.entiteter.oppdragskjema.Valuta;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="oppdragslinje">
- *   &lt;complexContent>
- *     &lt;extension base="{http://nav.no/system/os/entiteter/oppdragSkjema}oppdragslinje">
- *       &lt;sequence>
- *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}refusjonsInfo" minOccurs="0"/>
- *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}tekst" maxOccurs="50" minOccurs="0"/>
- *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}enhet" maxOccurs="50" minOccurs="0"/>
- *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}grad" maxOccurs="50" minOccurs="0"/>
- *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}attestant" maxOccurs="50" minOccurs="0"/>
- *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}valuta" maxOccurs="50" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="oppdragslinje"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://nav.no/system/os/entiteter/oppdragSkjema}oppdragslinje"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}refusjonsInfo" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}tekst" maxOccurs="50" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}enhet" maxOccurs="50" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}grad" maxOccurs="50" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}attestant" maxOccurs="50" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}valuta" maxOccurs="50" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -95,7 +95,7 @@ public class Oppdragslinje
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
+     * returned list will be present inside the Jakarta XML Binding object.
      * This is why there is not a <CODE>set</CODE> method for the tekst property.
      * 
      * <p>
@@ -124,7 +124,7 @@ public class Oppdragslinje
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
+     * returned list will be present inside the Jakarta XML Binding object.
      * This is why there is not a <CODE>set</CODE> method for the enhet property.
      * 
      * <p>
@@ -153,7 +153,7 @@ public class Oppdragslinje
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
+     * returned list will be present inside the Jakarta XML Binding object.
      * This is why there is not a <CODE>set</CODE> method for the grad property.
      * 
      * <p>
@@ -182,7 +182,7 @@ public class Oppdragslinje
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
+     * returned list will be present inside the Jakarta XML Binding object.
      * This is why there is not a <CODE>set</CODE> method for the attestant property.
      * 
      * <p>
@@ -211,7 +211,7 @@ public class Oppdragslinje
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
+     * returned list will be present inside the Jakarta XML Binding object.
      * This is why there is not a <CODE>set</CODE> method for the valuta property.
      * 
      * <p>

@@ -1,7 +1,7 @@
 
 package no.nav.system.os.entiteter.beregningskjema;
 
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
@@ -30,6 +30,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link BeregningsPeriode }
+     * 
+     */
+    public BeregningsPeriode createBeregningsPeriode() {
+        return new BeregningsPeriode();
+    }
+
+    /**
      * Create an instance of {@link BeregningStoppnivaa }
      * 
      */
@@ -43,14 +51,6 @@ public class ObjectFactory {
      */
     public BeregningStoppnivaaDetaljer createBeregningStoppnivaaDetaljer() {
         return new BeregningStoppnivaaDetaljer();
-    }
-
-    /**
-     * Create an instance of {@link BeregningsPeriode }
-     * 
-     */
-    public BeregningsPeriode createBeregningsPeriode() {
-        return new BeregningsPeriode();
     }
 
     /**

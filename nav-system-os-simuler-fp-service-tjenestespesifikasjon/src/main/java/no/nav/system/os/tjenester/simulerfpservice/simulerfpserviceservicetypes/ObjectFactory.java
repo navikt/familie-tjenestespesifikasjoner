@@ -1,7 +1,7 @@
 
 package no.nav.system.os.tjenester.simulerfpservice.simulerfpserviceservicetypes;
 
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
@@ -38,30 +38,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SendInnOppdragResponse }
-     * 
-     */
-    public SendInnOppdragResponse createSendInnOppdragResponse() {
-        return new SendInnOppdragResponse();
-    }
-
-    /**
-     * Create an instance of {@link SendInnOppdragRequest }
-     * 
-     */
-    public SendInnOppdragRequest createSendInnOppdragRequest() {
-        return new SendInnOppdragRequest();
-    }
-
-    /**
-     * Create an instance of {@link SimulerBeregningResponse }
-     * 
-     */
-    public SimulerBeregningResponse createSimulerBeregningResponse() {
-        return new SimulerBeregningResponse();
-    }
-
-    /**
      * Create an instance of {@link Oppdragslinje }
      * 
      */
@@ -75,6 +51,30 @@ public class ObjectFactory {
      */
     public Oppdrag createOppdrag() {
         return new Oppdrag();
+    }
+
+    /**
+     * Create an instance of {@link SendInnOppdragRequest }
+     * 
+     */
+    public SendInnOppdragRequest createSendInnOppdragRequest() {
+        return new SendInnOppdragRequest();
+    }
+
+    /**
+     * Create an instance of {@link SendInnOppdragResponse }
+     * 
+     */
+    public SendInnOppdragResponse createSendInnOppdragResponse() {
+        return new SendInnOppdragResponse();
+    }
+
+    /**
+     * Create an instance of {@link SimulerBeregningResponse }
+     * 
+     */
+    public SimulerBeregningResponse createSimulerBeregningResponse() {
+        return new SimulerBeregningResponse();
     }
 
     /**

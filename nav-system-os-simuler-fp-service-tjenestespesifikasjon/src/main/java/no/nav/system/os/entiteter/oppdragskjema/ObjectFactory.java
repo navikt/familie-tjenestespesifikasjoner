@@ -1,7 +1,7 @@
 
 package no.nav.system.os.entiteter.oppdragskjema;
 
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
@@ -30,11 +30,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link OppdragGjelder }
+     * Create an instance of {@link Enhet }
      * 
      */
-    public OppdragGjelder createOppdragGjelder() {
-        return new OppdragGjelder();
+    public Enhet createEnhet() {
+        return new Enhet();
     }
 
     /**
@@ -46,11 +46,43 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link Tekst }
+     * 
+     */
+    public Tekst createTekst() {
+        return new Tekst();
+    }
+
+    /**
+     * Create an instance of {@link Grad }
+     * 
+     */
+    public Grad createGrad() {
+        return new Grad();
+    }
+
+    /**
+     * Create an instance of {@link Attestant }
+     * 
+     */
+    public Attestant createAttestant() {
+        return new Attestant();
+    }
+
+    /**
      * Create an instance of {@link Valuta }
      * 
      */
     public Valuta createValuta() {
         return new Valuta();
+    }
+
+    /**
+     * Create an instance of {@link LinjeStatus }
+     * 
+     */
+    public LinjeStatus createLinjeStatus() {
+        return new LinjeStatus();
     }
 
     /**
@@ -62,11 +94,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Avstemmingsnokkel }
+     * Create an instance of {@link Skyldner }
      * 
      */
-    public Avstemmingsnokkel createAvstemmingsnokkel() {
-        return new Avstemmingsnokkel();
+    public Skyldner createSkyldner() {
+        return new Skyldner();
     }
 
     /**
@@ -75,30 +107,6 @@ public class ObjectFactory {
      */
     public Kid createKid() {
         return new Kid();
-    }
-
-    /**
-     * Create an instance of {@link Tekst }
-     * 
-     */
-    public Tekst createTekst() {
-        return new Tekst();
-    }
-
-    /**
-     * Create an instance of {@link Enhet }
-     * 
-     */
-    public Enhet createEnhet() {
-        return new Enhet();
-    }
-
-    /**
-     * Create an instance of {@link Attestant }
-     * 
-     */
-    public Attestant createAttestant() {
-        return new Attestant();
     }
 
     /**
@@ -118,6 +126,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link Avstemmingsnokkel }
+     * 
+     */
+    public Avstemmingsnokkel createAvstemmingsnokkel() {
+        return new Avstemmingsnokkel();
+    }
+
+    /**
      * Create an instance of {@link Ompostering }
      * 
      */
@@ -134,11 +150,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LinjeStatus }
+     * Create an instance of {@link OppdragGjelder }
      * 
      */
-    public LinjeStatus createLinjeStatus() {
-        return new LinjeStatus();
+    public OppdragGjelder createOppdragGjelder() {
+        return new OppdragGjelder();
     }
 
     /**
@@ -147,22 +163,6 @@ public class ObjectFactory {
      */
     public Bilagstype createBilagstype() {
         return new Bilagstype();
-    }
-
-    /**
-     * Create an instance of {@link Grad }
-     * 
-     */
-    public Grad createGrad() {
-        return new Grad();
-    }
-
-    /**
-     * Create an instance of {@link Skyldner }
-     * 
-     */
-    public Skyldner createSkyldner() {
-        return new Skyldner();
     }
 
     /**

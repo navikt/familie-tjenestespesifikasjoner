@@ -4,11 +4,11 @@ package no.nav.system.os.entiteter.beregningskjema;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
@@ -17,26 +17,26 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="kodeFagomraade" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeFagomraade"/>
- *         &lt;element name="stoppNivaaId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}linjeId"/>
- *         &lt;element name="behandlendeEnhet" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}enhet"/>
- *         &lt;element name="oppdragsId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}oppdragsId"/>
- *         &lt;element name="fagsystemId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fagsystemId"/>
- *         &lt;element name="kid" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kid"/>
- *         &lt;element name="utbetalesTilId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/>
- *         &lt;element name="utbetalesTilNavn" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}navn"/>
- *         &lt;element name="bilagsType" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeBilagsType"/>
- *         &lt;element name="forfall" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/>
- *         &lt;element name="feilkonto" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element ref="{http://nav.no/system/os/entiteter/beregningSkjema}beregningStoppnivaaDetaljer" maxOccurs="999"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="kodeFagomraade" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeFagomraade"/&gt;
+ *         &lt;element name="stoppNivaaId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}linjeId"/&gt;
+ *         &lt;element name="behandlendeEnhet" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}enhet"/&gt;
+ *         &lt;element name="oppdragsId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}oppdragsId"/&gt;
+ *         &lt;element name="fagsystemId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fagsystemId"/&gt;
+ *         &lt;element name="kid" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kid"/&gt;
+ *         &lt;element name="utbetalesTilId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/&gt;
+ *         &lt;element name="utbetalesTilNavn" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}navn"/&gt;
+ *         &lt;element name="bilagsType" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeBilagsType"/&gt;
+ *         &lt;element name="forfall" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/&gt;
+ *         &lt;element name="feilkonto" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element ref="{http://nav.no/system/os/entiteter/beregningSkjema}beregningStoppnivaaDetaljer" maxOccurs="999"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -336,7 +336,7 @@ public class BeregningStoppnivaa {
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
+     * returned list will be present inside the Jakarta XML Binding object.
      * This is why there is not a <CODE>set</CODE> method for the beregningStoppnivaaDetaljer property.
      * 
      * <p>

@@ -1,7 +1,7 @@
 
 package no.nav.system.os.tjenester.simulerfpservice.feil;
 
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
@@ -30,19 +30,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FeilUnderBehandling }
-     * 
-     */
-    public FeilUnderBehandling createFeilUnderBehandling() {
-        return new FeilUnderBehandling();
-    }
-
-    /**
      * Create an instance of {@link StelvioFault }
      * 
      */
     public StelvioFault createStelvioFault() {
         return new StelvioFault();
+    }
+
+    /**
+     * Create an instance of {@link FeilUnderBehandling }
+     * 
+     */
+    public FeilUnderBehandling createFeilUnderBehandling() {
+        return new FeilUnderBehandling();
     }
 
 }

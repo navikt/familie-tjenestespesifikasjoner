@@ -3,10 +3,10 @@ package no.nav.system.os.tjenester.simulerfpservice.simulerfpserviceservicetypes
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlType;
 import no.nav.system.os.entiteter.oppdragskjema.Avstemmingsnokkel;
 import no.nav.system.os.entiteter.oppdragskjema.Bilagstype;
 import no.nav.system.os.entiteter.oppdragskjema.Ompostering;
@@ -18,18 +18,18 @@ import no.nav.system.os.entiteter.oppdragskjema.Ompostering;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="oppdrag">
- *   &lt;complexContent>
- *     &lt;extension base="{http://nav.no/system/os/entiteter/oppdragSkjema}oppdrag">
- *       &lt;sequence>
- *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}bilagstype" maxOccurs="50" minOccurs="0"/>
- *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}avstemmingsnokkel" maxOccurs="50" minOccurs="0"/>
- *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}ompostering" minOccurs="0"/>
- *         &lt;element name="oppdragslinje" type="{http://nav.no/system/os/tjenester/simulerFpService/simulerFpServiceServiceTypes}oppdragslinje" maxOccurs="1400" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="oppdrag"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://nav.no/system/os/entiteter/oppdragSkjema}oppdrag"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}bilagstype" maxOccurs="50" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}avstemmingsnokkel" maxOccurs="50" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}ompostering" minOccurs="0"/&gt;
+ *         &lt;element name="oppdragslinje" type="{http://nav.no/system/os/tjenester/simulerFpService/simulerFpServiceServiceTypes}oppdragslinje" maxOccurs="1400" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -59,7 +59,7 @@ public class Oppdrag
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
+     * returned list will be present inside the Jakarta XML Binding object.
      * This is why there is not a <CODE>set</CODE> method for the bilagstype property.
      * 
      * <p>
@@ -88,7 +88,7 @@ public class Oppdrag
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
+     * returned list will be present inside the Jakarta XML Binding object.
      * This is why there is not a <CODE>set</CODE> method for the avstemmingsnokkel property.
      * 
      * <p>
@@ -141,7 +141,7 @@ public class Oppdrag
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
+     * returned list will be present inside the Jakarta XML Binding object.
      * This is why there is not a <CODE>set</CODE> method for the oppdragslinje property.
      * 
      * <p>

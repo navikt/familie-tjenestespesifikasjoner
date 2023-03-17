@@ -1,7 +1,7 @@
 
 package no.nav.system.os.entiteter.typer.simpletypes;
 
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**

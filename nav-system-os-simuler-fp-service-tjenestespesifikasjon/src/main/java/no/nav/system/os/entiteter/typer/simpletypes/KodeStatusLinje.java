@@ -1,24 +1,23 @@
 
 package no.nav.system.os.entiteter.typer.simpletypes;
 
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
  * <p>Java class for kodeStatusLinje.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
  * <pre>
- * &lt;simpleType name="kodeStatusLinje">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="OPPH"/>
- *     &lt;enumeration value="HVIL"/>
- *     &lt;enumeration value="SPER"/>
- *     &lt;enumeration value="REAK"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="kodeStatusLinje"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="OPPH"/&gt;
+ *     &lt;enumeration value="HVIL"/&gt;
+ *     &lt;enumeration value="SPER"/&gt;
+ *     &lt;enumeration value="REAK"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
