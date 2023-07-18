@@ -8,6 +8,14 @@
 
     <xsd:import namespace="urn:no:nav:tilbakekreving:typer:v1" schemaLocation="typer/typer.xsd"/>
 
+    <xsd:element name="detaljertKravgrunnlagMelding">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="detaljertKravgrunnlag" type="DetaljertKravgrunnlagDto"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
     <xsd:complexType name="HentKravgrunnlagDetaljDto">
         <xsd:annotation>
             <xsd:documentation>420 - Hent kravgrunnlag</xsd:documentation>
