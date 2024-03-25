@@ -39,7 +39,7 @@
                     <plugin>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-codegen-plugin</artifactId>
-                        <version>4.0.3</version>
+                        <version>4.0.4</version>
                         <executions>
                             <execution>
                                 <id>generate-sources-avstemming</id>
@@ -66,7 +66,7 @@
                     <plugin>
                         <groupId>org.apache.cxf</groupId>
                         <artifactId>cxf-xjc-plugin</artifactId>
-                        <version>4.0.0</version>
+                        <version>4.0.1</version>
                         <executions>
                             <execution>
                                 <id>xjc</id>
