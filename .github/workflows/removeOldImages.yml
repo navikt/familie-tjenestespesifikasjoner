@@ -1,0 +1,83 @@
+name: 'Remove Old Images'
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2-5 * * *'
+
+jobs:
+  remove-images:
+    name: 'Remove old images job'
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+    steps:
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'no.nav.familie.tjenestespesifikasjoner.tilbakekreving-v1-tjenestespesifikasjon'
+          package-type: 'container'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'no.nav.familie.tjenestespesifikasjoner.nav-system-os-simuler-fp-service-tjenestespesifikasjon'
+          package-type: 'container'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'no.nav.familie.tjenestespesifikasjoner.nav-virksomhet-oppdragsbehandling-v1-meldingsdefinisjon'
+          package-type: 'container'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'no.nav.familie.tjenestespesifikasjoner.avstemming-v1-tjenestespesifikasjon'
+          package-type: 'container'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'no.nav.familie.tjenestespesifikasjoner.tss'
+          package-type: 'container'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'no.familie.tjenestespesifikasjoner.tjenestespesifikasjoner'
+          package-type: 'container'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'no.familie.tjenestespesifikasjoner.avstemming-v1-tjenestespesifikasjon'
+          package-type: 'container'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'no.familie.tjenestespesifikasjoner.tilbakekreving-v1-tjenestespesifikasjon'
+          package-type: 'container'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'no.familie.tjenestespesifikasjoner.nav-system-os-simuler-fp-service-tjenestespesifikasjon'
+          package-type: 'container'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'no.familie.tjenestespesifikasjoner.tss'
+          package-type: 'container'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'no.familie.tjenestespesifikasjoner.nav-virksomhet-oppdragsbehandling-v1-meldingsdefinisjon'
+          package-type: 'container'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'no.nav.tilleggsstonader.tjenestespesifikasjoner'
+          package-type: 'container'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'no.nav.tilleggsstonader.nav-behandlesakogaktivitet-v1-tjenestespesifikasjon'
+          package-type: 'container'
+          min-versions-to-keep: 1
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-name: 'no.nav.familie.tjenestespesifikasjoner.tjenestespesifikasjoner'
+          package-type: 'container'
+          min-versions-to-keep: 1
