@@ -4,14 +4,14 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   build-and-deploy-artifact:
-    name: Build and deploy to github package
+    name: Build and deploy to GAR
     runs-on: ubuntu-latest
-    permissions:
-      contents: "read"
-      id-token: "write"
-      packages: "write"
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -47,9 +47,10 @@ jobs:
           echo "Setting version $VERSION"
           mvn versions:set -DnewVersion="$VERSION"
           mvn versions:commit
-
-      - name: Deploy to Github Package
-        env:
-          GITHUB_USERNAME: x-access-token
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: mvn --settings .github/maven-settings.xml source:jar-no-fork deploy -DskipTests=true -Dmaven.wagon.http.pool=false
+      - name: Build and publish Docker image
+        id: docker-push
+        uses: nais/docker-build-push@v0
+        with:
+          team: teamfamilie
+          identity_provider: ${{ secrets.NAIS_WORKLOAD_IDENTITY_PROVIDER }}
+          project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
