@@ -11,23 +11,23 @@ import jakarta.xml.bind.annotation.XmlType;
 /**
  *  446 - Annuller kravgrunnlag
  * 
- * <p>Java class for AnnullerKravgrunnlagDto complex type.
+ * <p>Java class for AnnullerKravgrunnlagDto complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="AnnullerKravgrunnlagDto"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="kodeAksjon" type="{urn:no:nav:tilbakekreving:typer:v1}KodeAksjonDto"/&gt;
- *         &lt;element name="vedtakId" type="{http://www.w3.org/2001/XMLSchema}integer"/&gt;
- *         &lt;element name="saksbehId" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="AnnullerKravgrunnlagDto">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="kodeAksjon" type="{urn:no:nav:tilbakekreving:typer:v1}KodeAksjonDto"/>
+ *         <element name="vedtakId" type="{http://www.w3.org/2001/XMLSchema}integer"/>
+ *         <element name="saksbehId" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */

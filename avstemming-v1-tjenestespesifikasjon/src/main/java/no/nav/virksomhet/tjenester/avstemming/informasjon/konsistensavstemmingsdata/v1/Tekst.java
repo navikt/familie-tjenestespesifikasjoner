@@ -7,25 +7,25 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for Tekst complex type.
+ * <p>Java class for Tekst complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="Tekst"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="tekstlinjeNummer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="tekstKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="tekst" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="tekstPeriode" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Periode" minOccurs="0"/&gt;
- *         &lt;element name="feilregistrering" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="Tekst">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="tekstlinjeNummer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
+ *         <element name="tekstKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="tekst" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="tekstPeriode" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Periode" minOccurs="0"/>
+ *         <element name="feilregistrering" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -39,14 +39,34 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class Tekst {
 
+    /**
+     * Fortløpende nummerering av tekst knyttet til et oppdrag
+     * 
+     */
     protected Integer tekstlinjeNummer;
+    /**
+     * Tekstkoder (melding på utbetalingskort).
+     * 
+     */
     protected String tekstKode;
+    /**
+     * Utbetalingstekst (melding på utbetalingskort). ”Fjern” medfører at teksten markeres som utgått.
+     * 
+     */
     protected String tekst;
+    /**
+     * Når teksten gjelder fra-og-med / til-og-med. Format åååå-mm-dd .
+     * 
+     */
     protected Periode tekstPeriode;
+    /**
+     * Settes til J hvis teksten var en feilregistrering
+     * 
+     */
     protected String feilregistrering;
 
     /**
-     * Gets the value of the tekstlinjeNummer property.
+     * Fortløpende nummerering av tekst knyttet til et oppdrag
      * 
      * @return
      *     possible object is
@@ -64,13 +84,14 @@ public class Tekst {
      *     allowed object is
      *     {@link Integer }
      *     
+     * @see #getTekstlinjeNummer()
      */
     public void setTekstlinjeNummer(Integer value) {
         this.tekstlinjeNummer = value;
     }
 
     /**
-     * Gets the value of the tekstKode property.
+     * Tekstkoder (melding på utbetalingskort).
      * 
      * @return
      *     possible object is
@@ -88,13 +109,14 @@ public class Tekst {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getTekstKode()
      */
     public void setTekstKode(String value) {
         this.tekstKode = value;
     }
 
     /**
-     * Gets the value of the tekst property.
+     * Utbetalingstekst (melding på utbetalingskort). ”Fjern” medfører at teksten markeres som utgått.
      * 
      * @return
      *     possible object is
@@ -112,13 +134,14 @@ public class Tekst {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getTekst()
      */
     public void setTekst(String value) {
         this.tekst = value;
     }
 
     /**
-     * Gets the value of the tekstPeriode property.
+     * Når teksten gjelder fra-og-med / til-og-med. Format åååå-mm-dd .
      * 
      * @return
      *     possible object is
@@ -136,13 +159,14 @@ public class Tekst {
      *     allowed object is
      *     {@link Periode }
      *     
+     * @see #getTekstPeriode()
      */
     public void setTekstPeriode(Periode value) {
         this.tekstPeriode = value;
     }
 
     /**
-     * Gets the value of the feilregistrering property.
+     * Settes til J hvis teksten var en feilregistrering
      * 
      * @return
      *     possible object is
@@ -160,6 +184,7 @@ public class Tekst {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getFeilregistrering()
      */
     public void setFeilregistrering(String value) {
         this.feilregistrering = value;

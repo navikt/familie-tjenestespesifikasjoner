@@ -11,23 +11,23 @@ import jakarta.xml.bind.annotation.XmlType;
 /**
  * Grensesnittavstemmingen skal minimum bestå av en id-110 (aksjonskode ’DATA) og en totalrecord (id-120) i tillegg til START- og SLUTT-recorden.
  * 
- * <p>Java class for Totaldata complex type.
+ * <p>Java class for Totaldata complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="Totaldata"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="totalAntall" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="totalBelop" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
- *         &lt;element name="fortegn" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Fortegn" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="Totaldata">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="totalAntall" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         <element name="totalBelop" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
+ *         <element name="fortegn" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Fortegn" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -39,13 +39,25 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class Totaldata {
 
+    /**
+     * Antall overførte meldinger
+     * 
+     */
     protected int totalAntall;
+    /**
+     * Sum beløp på øverførte meldinger
+     * 
+     */
     protected BigDecimal totalBelop;
+    /**
+     * Angir om beløp er tillegg (T) eller fradrag (F)
+     * 
+     */
     @XmlSchemaType(name = "string")
     protected Fortegn fortegn;
 
     /**
-     * Gets the value of the totalAntall property.
+     * Antall overførte meldinger
      * 
      */
     public int getTotalAntall() {
@@ -61,7 +73,7 @@ public class Totaldata {
     }
 
     /**
-     * Gets the value of the totalBelop property.
+     * Sum beløp på øverførte meldinger
      * 
      * @return
      *     possible object is
@@ -79,13 +91,14 @@ public class Totaldata {
      *     allowed object is
      *     {@link BigDecimal }
      *     
+     * @see #getTotalBelop()
      */
     public void setTotalBelop(BigDecimal value) {
         this.totalBelop = value;
     }
 
     /**
-     * Gets the value of the fortegn property.
+     * Angir om beløp er tillegg (T) eller fradrag (F)
      * 
      * @return
      *     possible object is
@@ -103,6 +116,7 @@ public class Totaldata {
      *     allowed object is
      *     {@link Fortegn }
      *     
+     * @see #getFortegn()
      */
     public void setFortegn(Fortegn value) {
         this.fortegn = value;

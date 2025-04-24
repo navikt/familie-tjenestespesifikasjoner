@@ -11,7 +11,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the no.nav.virksomhet.tjenester.avstemming.meldinger.v1 package. 
- * <p>An ObjectFactory allows you to programatically 
+ * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -24,7 +24,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Avstemmingsdata_QNAME = new QName("http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1", "avstemmingsdata");
+    private static final QName _Avstemmingsdata_QNAME = new QName("http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1", "avstemmingsdata");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: no.nav.virksomhet.tjenester.avstemming.meldinger.v1
@@ -36,6 +36,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Avstemmingsdata }
      * 
+     * @return
+     *     the new instance of {@link Avstemmingsdata }
      */
     public Avstemmingsdata createAvstemmingsdata() {
         return new Avstemmingsdata();
@@ -44,6 +46,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Totaldata }
      * 
+     * @return
+     *     the new instance of {@link Totaldata }
      */
     public Totaldata createTotaldata() {
         return new Totaldata();
@@ -52,6 +56,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Grunnlagsdata }
      * 
+     * @return
+     *     the new instance of {@link Grunnlagsdata }
      */
     public Grunnlagsdata createGrunnlagsdata() {
         return new Grunnlagsdata();
@@ -60,6 +66,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Aksjonsdata }
      * 
+     * @return
+     *     the new instance of {@link Aksjonsdata }
      */
     public Aksjonsdata createAksjonsdata() {
         return new Aksjonsdata();
@@ -68,6 +76,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Detaljdata }
      * 
+     * @return
+     *     the new instance of {@link Detaljdata }
      */
     public Detaljdata createDetaljdata() {
         return new Detaljdata();
@@ -76,6 +86,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Periodedata }
      * 
+     * @return
+     *     the new instance of {@link Periodedata }
      */
     public Periodedata createPeriodedata() {
         return new Periodedata();
@@ -84,6 +96,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendAsynkronAvstemmingsdataRequest }
      * 
+     * @return
+     *     the new instance of {@link SendAsynkronAvstemmingsdataRequest }
      */
     public SendAsynkronAvstemmingsdataRequest createSendAsynkronAvstemmingsdataRequest() {
         return new SendAsynkronAvstemmingsdataRequest();
@@ -99,7 +113,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1", name = "avstemmingsdata")
     public JAXBElement<Avstemmingsdata> createAvstemmingsdata(Avstemmingsdata value) {
-        return new JAXBElement<Avstemmingsdata>(_Avstemmingsdata_QNAME, Avstemmingsdata.class, null, value);
+        return new JAXBElement<>(_Avstemmingsdata_QNAME, Avstemmingsdata.class, null, value);
     }
 
 }

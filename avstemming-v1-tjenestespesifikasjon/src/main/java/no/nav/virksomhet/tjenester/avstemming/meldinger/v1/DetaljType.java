@@ -6,18 +6,20 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for DetaljType.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <pre>
- * &lt;simpleType name="DetaljType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="VARS"/&gt;
- *     &lt;enumeration value="AVVI"/&gt;
- *     &lt;enumeration value="MANG"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * 
+ * <p>Java class for DetaljType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="DetaljType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="VARS"/>
+ *     <enumeration value="AVVI"/>
+ *     <enumeration value="MANG"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "DetaljType")

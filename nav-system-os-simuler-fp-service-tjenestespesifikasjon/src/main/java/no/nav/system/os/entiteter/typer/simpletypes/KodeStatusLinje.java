@@ -6,19 +6,21 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for kodeStatusLinje.
+ * Typen beskriver formatet og begrensningene til kodeStatusLinje.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <pre>
- * &lt;simpleType name="kodeStatusLinje"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="OPPH"/&gt;
- *     &lt;enumeration value="HVIL"/&gt;
- *     &lt;enumeration value="SPER"/&gt;
- *     &lt;enumeration value="REAK"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * <p>Java class for kodeStatusLinje</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="kodeStatusLinje">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="OPPH"/>
+ *     <enumeration value="HVIL"/>
+ *     <enumeration value="SPER"/>
+ *     <enumeration value="REAK"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "kodeStatusLinje", namespace = "http://nav.no/system/os/entiteter/typer/simpleTypes")

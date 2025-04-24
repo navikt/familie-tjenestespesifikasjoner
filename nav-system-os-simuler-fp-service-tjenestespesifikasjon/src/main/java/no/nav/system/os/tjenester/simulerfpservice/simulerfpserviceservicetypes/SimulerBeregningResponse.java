@@ -9,22 +9,22 @@ import no.nav.system.os.entiteter.infomelding.Infomelding;
 
 
 /**
- * <p>Java class for simulerBeregningResponse complex type.
+ * <p>Java class for simulerBeregningResponse complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="simulerBeregningResponse"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="simulering" type="{http://nav.no/system/os/entiteter/beregningSkjema}beregning" minOccurs="0"/&gt;
- *         &lt;element name="infomelding" type="{http://nav.no/system/os/entiteter/infomelding}infomelding" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="simulerBeregningResponse">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="simulering" type="{http://nav.no/system/os/entiteter/beregningSkjema}beregning" minOccurs="0"/>
+ *         <element name="infomelding" type="{http://nav.no/system/os/entiteter/infomelding}infomelding" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -35,11 +35,19 @@ import no.nav.system.os.entiteter.infomelding.Infomelding;
 })
 public class SimulerBeregningResponse {
 
+    /**
+     * Simulert beregningsresultat for gitt periode
+     * 
+     */
     protected Beregning simulering;
+    /**
+     * Informasjonsmelding
+     * 
+     */
     protected Infomelding infomelding;
 
     /**
-     * Gets the value of the simulering property.
+     * Simulert beregningsresultat for gitt periode
      * 
      * @return
      *     possible object is
@@ -57,13 +65,14 @@ public class SimulerBeregningResponse {
      *     allowed object is
      *     {@link Beregning }
      *     
+     * @see #getSimulering()
      */
     public void setSimulering(Beregning value) {
         this.simulering = value;
     }
 
     /**
-     * Gets the value of the infomelding property.
+     * Informasjonsmelding
      * 
      * @return
      *     possible object is
@@ -81,6 +90,7 @@ public class SimulerBeregningResponse {
      *     allowed object is
      *     {@link Infomelding }
      *     
+     * @see #getInfomelding()
      */
     public void setInfomelding(Infomelding value) {
         this.infomelding = value;

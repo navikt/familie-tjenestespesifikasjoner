@@ -8,33 +8,33 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for simulerBeregningRequest complex type.
+ * <p>Java class for simulerBeregningRequest complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="simulerBeregningRequest"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="oppdrag" type="{http://nav.no/system/os/tjenester/simulerFpService/simulerFpServiceServiceTypes}oppdrag"/&gt;
- *         &lt;element name="simuleringsPeriode"&gt;
- *           &lt;complexType&gt;
- *             &lt;complexContent&gt;
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *                 &lt;sequence&gt;
- *                   &lt;element name="datoSimulerFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
- *                   &lt;element name="datoSimulerTom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
- *                 &lt;/sequence&gt;
- *               &lt;/restriction&gt;
- *             &lt;/complexContent&gt;
- *           &lt;/complexType&gt;
- *         &lt;/element&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="simulerBeregningRequest">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="oppdrag" type="{http://nav.no/system/os/tjenester/simulerFpService/simulerFpServiceServiceTypes}oppdrag"/>
+ *         <element name="simuleringsPeriode">
+ *           <complexType>
+ *             <complexContent>
+ *               <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 <sequence>
+ *                   <element name="datoSimulerFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
+ *                   <element name="datoSimulerTom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
+ *                 </sequence>
+ *               </restriction>
+ *             </complexContent>
+ *           </complexType>
+ *         </element>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -45,13 +45,21 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class SimulerBeregningRequest {
 
+    /**
+     * Oppdragetmed underelementer for simuleringsberegning.
+     * 
+     */
     @XmlElement(required = true)
     protected Oppdrag oppdrag;
+    /**
+     * Referanse ID 300
+     * 
+     */
     @XmlElement(required = true)
     protected SimulerBeregningRequest.SimuleringsPeriode simuleringsPeriode;
 
     /**
-     * Gets the value of the oppdrag property.
+     * Oppdragetmed underelementer for simuleringsberegning.
      * 
      * @return
      *     possible object is
@@ -69,13 +77,14 @@ public class SimulerBeregningRequest {
      *     allowed object is
      *     {@link Oppdrag }
      *     
+     * @see #getOppdrag()
      */
     public void setOppdrag(Oppdrag value) {
         this.oppdrag = value;
     }
 
     /**
-     * Gets the value of the simuleringsPeriode property.
+     * Referanse ID 300
      * 
      * @return
      *     possible object is
@@ -93,6 +102,7 @@ public class SimulerBeregningRequest {
      *     allowed object is
      *     {@link SimulerBeregningRequest.SimuleringsPeriode }
      *     
+     * @see #getSimuleringsPeriode()
      */
     public void setSimuleringsPeriode(SimulerBeregningRequest.SimuleringsPeriode value) {
         this.simuleringsPeriode = value;
@@ -100,22 +110,22 @@ public class SimulerBeregningRequest {
 
 
     /**
-     * <p>Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type</p>.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.</p>
      * 
-     * <pre>
-     * &lt;complexType&gt;
-     *   &lt;complexContent&gt;
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
-     *       &lt;sequence&gt;
-     *         &lt;element name="datoSimulerFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
-     *         &lt;element name="datoSimulerTom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
-     *       &lt;/sequence&gt;
-     *     &lt;/restriction&gt;
-     *   &lt;/complexContent&gt;
-     * &lt;/complexType&gt;
-     * </pre>
+     * <pre>{@code
+     * <complexType>
+     *   <complexContent>
+     *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       <sequence>
+     *         <element name="datoSimulerFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
+     *         <element name="datoSimulerTom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
+     *       </sequence>
+     *     </restriction>
+     *   </complexContent>
+     * </complexType>
+     * }</pre>
      * 
      * 
      */

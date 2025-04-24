@@ -10,51 +10,51 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for Oppdragslinje complex type.
+ * <p>Java class for Oppdragslinje complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="Oppdragslinje"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="vedtakId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="delytelseId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="linjeId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="klassifikasjonKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="klassifkasjonFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="vedtakPeriode" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Periode" minOccurs="0"/&gt;
- *         &lt;element name="sats" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
- *         &lt;element name="satstypeKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="fradragTillegg" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="skyldnerId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="skyldnerFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="kravhaverId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="kravhaverFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="kundeidentifikasjon" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="kundeidentifikasjonFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="brukKjoreplan" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="saksbehandlerId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="utbetalesTilId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="utbetalesFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="arbeidsgiverKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="henvisning" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="soknadsType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="refFagsystemId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="refOppdragId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="refDelytelseId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="refLinjeId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="linjetekstListe" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Tekst" maxOccurs="unbounded" minOccurs="0"/&gt;
- *         &lt;element name="linjeenhetListe" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Enhet" maxOccurs="unbounded" minOccurs="0"/&gt;
- *         &lt;element name="gradListe" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Grad" maxOccurs="unbounded" minOccurs="0"/&gt;
- *         &lt;element name="attestantListe" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Attestant" maxOccurs="unbounded" minOccurs="0"/&gt;
- *         &lt;element name="valutaListe" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Valuta" maxOccurs="unbounded" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="Oppdragslinje">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="vedtakId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="delytelseId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="linjeId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="klassifikasjonKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="klassifkasjonFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="vedtakPeriode" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Periode" minOccurs="0"/>
+ *         <element name="sats" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
+ *         <element name="satstypeKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="fradragTillegg" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="skyldnerId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="skyldnerFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="kravhaverId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="kravhaverFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="kundeidentifikasjon" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="kundeidentifikasjonFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="brukKjoreplan" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="saksbehandlerId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="utbetalesTilId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="utbetalesFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="arbeidsgiverKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="henvisning" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="soknadsType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="refFagsystemId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="refOppdragId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="refDelytelseId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="refLinjeId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="linjetekstListe" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Tekst" maxOccurs="unbounded" minOccurs="0"/>
+ *         <element name="linjeenhetListe" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Enhet" maxOccurs="unbounded" minOccurs="0"/>
+ *         <element name="gradListe" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Grad" maxOccurs="unbounded" minOccurs="0"/>
+ *         <element name="attestantListe" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Attestant" maxOccurs="unbounded" minOccurs="0"/>
+ *         <element name="valutaListe" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Valuta" maxOccurs="unbounded" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -94,40 +94,164 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class Oppdragslinje {
 
+    /**
+     * Fagsystemets id av vedtaket
+     * 
+     */
     protected String vedtakId;
+    /**
+     * Fagsystemets id av delytelsen
+     * 
+     */
     protected String delytelseId;
+    /**
+     * Oppdragsbasens id av oppdragslinjen
+     * 
+     */
     protected String linjeId;
+    /**
+     * Klassifisering (stønadsklasse, inkl ferie)
+     * 
+     */
     protected String klassifikasjonKode;
+    /**
+     * Fra-og-med dato på klassifiseringen. Format åååå-mm-dd
+     * 
+     */
     protected String klassifkasjonFom;
+    /**
+     * Fra-og-med dato / til-og-med dato på vedtaket/utbetalingen
+     * 
+     */
     protected Periode vedtakPeriode;
+    /**
+     * Satsen
+     * 
+     */
     protected BigDecimal sats;
+    /**
+     * Satstype (engangs, dag, uke, 14-dag, mnd, år)
+     * 
+     */
     protected String satstypeKode;
+    /**
+     * Betinget påkrevd:  F eller T. Må kun fylles ut hvis sats finnes
+     * 
+     */
     protected String fradragTillegg;
+    /**
+     * Skyldner (fnr/orgnr), default er behandlende enhets orgnr
+     * 
+     */
     protected String skyldnerId;
+    /**
+     * Fra-og-med dato på skyldner. Format åååå-mm-dd
+     * 
+     */
     protected String skyldnerFom;
+    /**
+     * Hvem kravet gjelder
+     * 
+     */
     protected String kravhaverId;
+    /**
+     * Fra-og-med dato på kravhaver.  Format åååå-mm-dd
+     * 
+     */
     protected String kravhaverFom;
+    /**
+     * kid
+     * 
+     */
     protected String kundeidentifikasjon;
+    /**
+     * fra om med når KID. Format åååå-mm-dd
+     * 
+     */
     protected String kundeidentifikasjonFom;
+    /**
+     * Anngir om utbetalingen skal skje i dag eller i henhold til kjøreplan
+     * 
+     */
     protected String brukKjoreplan;
+    /**
+     * Saksbehandler
+     * 
+     */
     protected String saksbehandlerId;
+    /**
+     * Utbetalingsmottaker (fnr/orgnr)
+     * 
+     */
     protected String utbetalesTilId;
+    /**
+     * Fra-og-med dato på utbetalingen.  Format åååå-mm-dd
+     * 
+     */
     protected String utbetalesFom;
+    /**
+     * (Kodeverk som er benyttet av Sykepenger rutina)
+     * 
+     */
     protected String arbeidsgiverKode;
+    /**
+     * Henvisning til grunndokumentasjon (legitimering av kostnad)
+     * 
+     */
     protected String henvisning;
+    /**
+     * Årsaken til at vedtaket ble fattet.
+     * 
+     */
     protected String soknadsType;
+    /**
+     * Fagsystemets id av vedtaket som endres
+     * 
+     */
     protected String refFagsystemId;
+    /**
+     * Oppdragsbasens id av vedtaket som endres
+     * 
+     */
     protected String refOppdragId;
+    /**
+     * Id av delytelsen som endres (fagsystemets)
+     * 
+     */
     protected String refDelytelseId;
+    /**
+     * Oppdragsbasens id av delytelsen som endres.
+     * 
+     */
     protected String refLinjeId;
+    /**
+     * Liste av kompleks type Linjetekst
+     * 
+     */
     protected List<Tekst> linjetekstListe;
+    /**
+     * Liste av kompleks type Linjeenhet
+     * 
+     */
     protected List<Enhet> linjeenhetListe;
+    /**
+     * Liste av kompleks type Grad
+     * 
+     */
     protected List<Grad> gradListe;
+    /**
+     * Liste av kompleks type Attestant
+     * 
+     */
     protected List<Attestant> attestantListe;
+    /**
+     * Liste av kompleks type Valuta
+     * 
+     */
     protected List<Valuta> valutaListe;
 
     /**
-     * Gets the value of the vedtakId property.
+     * Fagsystemets id av vedtaket
      * 
      * @return
      *     possible object is
@@ -145,13 +269,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getVedtakId()
      */
     public void setVedtakId(String value) {
         this.vedtakId = value;
     }
 
     /**
-     * Gets the value of the delytelseId property.
+     * Fagsystemets id av delytelsen
      * 
      * @return
      *     possible object is
@@ -169,13 +294,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getDelytelseId()
      */
     public void setDelytelseId(String value) {
         this.delytelseId = value;
     }
 
     /**
-     * Gets the value of the linjeId property.
+     * Oppdragsbasens id av oppdragslinjen
      * 
      * @return
      *     possible object is
@@ -193,13 +319,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getLinjeId()
      */
     public void setLinjeId(String value) {
         this.linjeId = value;
     }
 
     /**
-     * Gets the value of the klassifikasjonKode property.
+     * Klassifisering (stønadsklasse, inkl ferie)
      * 
      * @return
      *     possible object is
@@ -217,13 +344,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getKlassifikasjonKode()
      */
     public void setKlassifikasjonKode(String value) {
         this.klassifikasjonKode = value;
     }
 
     /**
-     * Gets the value of the klassifkasjonFom property.
+     * Fra-og-med dato på klassifiseringen. Format åååå-mm-dd
      * 
      * @return
      *     possible object is
@@ -241,13 +369,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getKlassifkasjonFom()
      */
     public void setKlassifkasjonFom(String value) {
         this.klassifkasjonFom = value;
     }
 
     /**
-     * Gets the value of the vedtakPeriode property.
+     * Fra-og-med dato / til-og-med dato på vedtaket/utbetalingen
      * 
      * @return
      *     possible object is
@@ -265,13 +394,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link Periode }
      *     
+     * @see #getVedtakPeriode()
      */
     public void setVedtakPeriode(Periode value) {
         this.vedtakPeriode = value;
     }
 
     /**
-     * Gets the value of the sats property.
+     * Satsen
      * 
      * @return
      *     possible object is
@@ -289,13 +419,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link BigDecimal }
      *     
+     * @see #getSats()
      */
     public void setSats(BigDecimal value) {
         this.sats = value;
     }
 
     /**
-     * Gets the value of the satstypeKode property.
+     * Satstype (engangs, dag, uke, 14-dag, mnd, år)
      * 
      * @return
      *     possible object is
@@ -313,13 +444,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getSatstypeKode()
      */
     public void setSatstypeKode(String value) {
         this.satstypeKode = value;
     }
 
     /**
-     * Gets the value of the fradragTillegg property.
+     * Betinget påkrevd:  F eller T. Må kun fylles ut hvis sats finnes
      * 
      * @return
      *     possible object is
@@ -337,13 +469,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getFradragTillegg()
      */
     public void setFradragTillegg(String value) {
         this.fradragTillegg = value;
     }
 
     /**
-     * Gets the value of the skyldnerId property.
+     * Skyldner (fnr/orgnr), default er behandlende enhets orgnr
      * 
      * @return
      *     possible object is
@@ -361,13 +494,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getSkyldnerId()
      */
     public void setSkyldnerId(String value) {
         this.skyldnerId = value;
     }
 
     /**
-     * Gets the value of the skyldnerFom property.
+     * Fra-og-med dato på skyldner. Format åååå-mm-dd
      * 
      * @return
      *     possible object is
@@ -385,13 +519,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getSkyldnerFom()
      */
     public void setSkyldnerFom(String value) {
         this.skyldnerFom = value;
     }
 
     /**
-     * Gets the value of the kravhaverId property.
+     * Hvem kravet gjelder
      * 
      * @return
      *     possible object is
@@ -409,13 +544,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getKravhaverId()
      */
     public void setKravhaverId(String value) {
         this.kravhaverId = value;
     }
 
     /**
-     * Gets the value of the kravhaverFom property.
+     * Fra-og-med dato på kravhaver.  Format åååå-mm-dd
      * 
      * @return
      *     possible object is
@@ -433,13 +569,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getKravhaverFom()
      */
     public void setKravhaverFom(String value) {
         this.kravhaverFom = value;
     }
 
     /**
-     * Gets the value of the kundeidentifikasjon property.
+     * kid
      * 
      * @return
      *     possible object is
@@ -457,13 +594,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getKundeidentifikasjon()
      */
     public void setKundeidentifikasjon(String value) {
         this.kundeidentifikasjon = value;
     }
 
     /**
-     * Gets the value of the kundeidentifikasjonFom property.
+     * fra om med når KID. Format åååå-mm-dd
      * 
      * @return
      *     possible object is
@@ -481,13 +619,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getKundeidentifikasjonFom()
      */
     public void setKundeidentifikasjonFom(String value) {
         this.kundeidentifikasjonFom = value;
     }
 
     /**
-     * Gets the value of the brukKjoreplan property.
+     * Anngir om utbetalingen skal skje i dag eller i henhold til kjøreplan
      * 
      * @return
      *     possible object is
@@ -505,13 +644,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getBrukKjoreplan()
      */
     public void setBrukKjoreplan(String value) {
         this.brukKjoreplan = value;
     }
 
     /**
-     * Gets the value of the saksbehandlerId property.
+     * Saksbehandler
      * 
      * @return
      *     possible object is
@@ -529,13 +669,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getSaksbehandlerId()
      */
     public void setSaksbehandlerId(String value) {
         this.saksbehandlerId = value;
     }
 
     /**
-     * Gets the value of the utbetalesTilId property.
+     * Utbetalingsmottaker (fnr/orgnr)
      * 
      * @return
      *     possible object is
@@ -553,13 +694,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getUtbetalesTilId()
      */
     public void setUtbetalesTilId(String value) {
         this.utbetalesTilId = value;
     }
 
     /**
-     * Gets the value of the utbetalesFom property.
+     * Fra-og-med dato på utbetalingen.  Format åååå-mm-dd
      * 
      * @return
      *     possible object is
@@ -577,13 +719,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getUtbetalesFom()
      */
     public void setUtbetalesFom(String value) {
         this.utbetalesFom = value;
     }
 
     /**
-     * Gets the value of the arbeidsgiverKode property.
+     * (Kodeverk som er benyttet av Sykepenger rutina)
      * 
      * @return
      *     possible object is
@@ -601,13 +744,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getArbeidsgiverKode()
      */
     public void setArbeidsgiverKode(String value) {
         this.arbeidsgiverKode = value;
     }
 
     /**
-     * Gets the value of the henvisning property.
+     * Henvisning til grunndokumentasjon (legitimering av kostnad)
      * 
      * @return
      *     possible object is
@@ -625,13 +769,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getHenvisning()
      */
     public void setHenvisning(String value) {
         this.henvisning = value;
     }
 
     /**
-     * Gets the value of the soknadsType property.
+     * Årsaken til at vedtaket ble fattet.
      * 
      * @return
      *     possible object is
@@ -649,13 +794,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getSoknadsType()
      */
     public void setSoknadsType(String value) {
         this.soknadsType = value;
     }
 
     /**
-     * Gets the value of the refFagsystemId property.
+     * Fagsystemets id av vedtaket som endres
      * 
      * @return
      *     possible object is
@@ -673,13 +819,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getRefFagsystemId()
      */
     public void setRefFagsystemId(String value) {
         this.refFagsystemId = value;
     }
 
     /**
-     * Gets the value of the refOppdragId property.
+     * Oppdragsbasens id av vedtaket som endres
      * 
      * @return
      *     possible object is
@@ -697,13 +844,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getRefOppdragId()
      */
     public void setRefOppdragId(String value) {
         this.refOppdragId = value;
     }
 
     /**
-     * Gets the value of the refDelytelseId property.
+     * Id av delytelsen som endres (fagsystemets)
      * 
      * @return
      *     possible object is
@@ -721,13 +869,14 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getRefDelytelseId()
      */
     public void setRefDelytelseId(String value) {
         this.refDelytelseId = value;
     }
 
     /**
-     * Gets the value of the refLinjeId property.
+     * Oppdragsbasens id av delytelsen som endres.
      * 
      * @return
      *     possible object is
@@ -745,152 +894,178 @@ public class Oppdragslinje {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getRefLinjeId()
      */
     public void setRefLinjeId(String value) {
         this.refLinjeId = value;
     }
 
     /**
+     * Liste av kompleks type Linjetekst
+     * 
      * Gets the value of the linjetekstListe property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a <CODE>set</CODE> method for the linjetekstListe property.
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the linjetekstListe property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getLinjetekstListe().add(newItem);
+     * getLinjetekstListe().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Tekst }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the linjetekstListe property.
      */
     public List<Tekst> getLinjetekstListe() {
         if (linjetekstListe == null) {
-            linjetekstListe = new ArrayList<Tekst>();
+            linjetekstListe = new ArrayList<>();
         }
         return this.linjetekstListe;
     }
 
     /**
+     * Liste av kompleks type Linjeenhet
+     * 
      * Gets the value of the linjeenhetListe property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a <CODE>set</CODE> method for the linjeenhetListe property.
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the linjeenhetListe property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getLinjeenhetListe().add(newItem);
+     * getLinjeenhetListe().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Enhet }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the linjeenhetListe property.
      */
     public List<Enhet> getLinjeenhetListe() {
         if (linjeenhetListe == null) {
-            linjeenhetListe = new ArrayList<Enhet>();
+            linjeenhetListe = new ArrayList<>();
         }
         return this.linjeenhetListe;
     }
 
     /**
+     * Liste av kompleks type Grad
+     * 
      * Gets the value of the gradListe property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a <CODE>set</CODE> method for the gradListe property.
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the gradListe property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getGradListe().add(newItem);
+     * getGradListe().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Grad }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the gradListe property.
      */
     public List<Grad> getGradListe() {
         if (gradListe == null) {
-            gradListe = new ArrayList<Grad>();
+            gradListe = new ArrayList<>();
         }
         return this.gradListe;
     }
 
     /**
+     * Liste av kompleks type Attestant
+     * 
      * Gets the value of the attestantListe property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a <CODE>set</CODE> method for the attestantListe property.
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the attestantListe property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getAttestantListe().add(newItem);
+     * getAttestantListe().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Attestant }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the attestantListe property.
      */
     public List<Attestant> getAttestantListe() {
         if (attestantListe == null) {
-            attestantListe = new ArrayList<Attestant>();
+            attestantListe = new ArrayList<>();
         }
         return this.attestantListe;
     }
 
     /**
+     * Liste av kompleks type Valuta
+     * 
      * Gets the value of the valutaListe property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a <CODE>set</CODE> method for the valutaListe property.
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the valutaListe property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getValutaListe().add(newItem);
+     * getValutaListe().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Valuta }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the valutaListe property.
      */
     public List<Valuta> getValutaListe() {
         if (valutaListe == null) {
-            valutaListe = new ArrayList<Valuta>();
+            valutaListe = new ArrayList<>();
         }
         return this.valutaListe;
     }

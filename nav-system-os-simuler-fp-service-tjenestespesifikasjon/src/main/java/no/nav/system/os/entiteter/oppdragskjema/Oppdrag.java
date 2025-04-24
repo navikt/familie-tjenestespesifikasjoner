@@ -15,43 +15,43 @@ import no.nav.system.os.entiteter.typer.simpletypes.KodeStatus;
 /**
  * Referanse ID 110
  * 
- * <p>Java class for oppdrag complex type.
+ * <p>Java class for oppdrag complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="oppdrag"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="kodeEndring"&gt;
- *           &lt;simpleType&gt;
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *               &lt;enumeration value="NY"/&gt;
- *               &lt;enumeration value="ENDR"/&gt;
- *               &lt;enumeration value="UEND"/&gt;
- *             &lt;/restriction&gt;
- *           &lt;/simpleType&gt;
- *         &lt;/element&gt;
- *         &lt;element name="kodeStatus" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeStatus" minOccurs="0"/&gt;
- *         &lt;element name="datoStatusFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
- *         &lt;element name="kodeFagomraade" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeFagomraade"/&gt;
- *         &lt;element name="fagsystemId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fagsystemId" minOccurs="0"/&gt;
- *         &lt;element name="oppdragsId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}oppdragsId" minOccurs="0"/&gt;
- *         &lt;element name="utbetFrekvens" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}utbetFrekvens" minOccurs="0"/&gt;
- *         &lt;element name="datoForfall" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
- *         &lt;element name="stonadId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}stonadId" minOccurs="0"/&gt;
- *         &lt;element name="oppdragGjelderId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/&gt;
- *         &lt;element name="datoOppdragGjelderFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/&gt;
- *         &lt;element name="saksbehId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}saksbehId"/&gt;
- *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}enhet" maxOccurs="2" minOccurs="0"/&gt;
- *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}belopsgrense" maxOccurs="50" minOccurs="0"/&gt;
- *         &lt;element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}tekst" maxOccurs="50" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="oppdrag">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="kodeEndring">
+ *           <simpleType>
+ *             <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               <enumeration value="NY"/>
+ *               <enumeration value="ENDR"/>
+ *               <enumeration value="UEND"/>
+ *             </restriction>
+ *           </simpleType>
+ *         </element>
+ *         <element name="kodeStatus" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeStatus" minOccurs="0"/>
+ *         <element name="datoStatusFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
+ *         <element name="kodeFagomraade" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeFagomraade"/>
+ *         <element name="fagsystemId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fagsystemId" minOccurs="0"/>
+ *         <element name="oppdragsId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}oppdragsId" minOccurs="0"/>
+ *         <element name="utbetFrekvens" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}utbetFrekvens" minOccurs="0"/>
+ *         <element name="datoForfall" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
+ *         <element name="stonadId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}stonadId" minOccurs="0"/>
+ *         <element name="oppdragGjelderId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/>
+ *         <element name="datoOppdragGjelderFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/>
+ *         <element name="saksbehId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}saksbehId"/>
+ *         <element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}enhet" maxOccurs="2" minOccurs="0"/>
+ *         <element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}belopsgrense" maxOccurs="50" minOccurs="0"/>
+ *         <element ref="{http://nav.no/system/os/entiteter/oppdragSkjema}tekst" maxOccurs="50" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -96,10 +96,22 @@ public class Oppdrag {
     protected String datoOppdragGjelderFom;
     @XmlElement(required = true)
     protected String saksbehId;
+    /**
+     * Referanse ID 160 dersom enhet på nivå oppdragslinje
+     * 
+     */
     @XmlElement(namespace = "http://nav.no/system/os/entiteter/oppdragSkjema")
     protected List<Enhet> enhet;
+    /**
+     * Referanse ID 130
+     * 
+     */
     @XmlElement(namespace = "http://nav.no/system/os/entiteter/oppdragSkjema")
     protected List<Belopsgrense> belopsgrense;
+    /**
+     * Referanse ID 158 dersom tekst tihørende oppdragslinje
+     * 
+     */
     @XmlElement(namespace = "http://nav.no/system/os/entiteter/oppdragSkjema")
     protected List<Tekst> tekst;
 
@@ -392,88 +404,103 @@ public class Oppdrag {
     }
 
     /**
+     * Referanse ID 160 dersom enhet på nivå oppdragslinje
+     * 
      * Gets the value of the enhet property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a <CODE>set</CODE> method for the enhet property.
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the enhet property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getEnhet().add(newItem);
+     * getEnhet().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Enhet }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the enhet property.
      */
     public List<Enhet> getEnhet() {
         if (enhet == null) {
-            enhet = new ArrayList<Enhet>();
+            enhet = new ArrayList<>();
         }
         return this.enhet;
     }
 
     /**
+     * Referanse ID 130
+     * 
      * Gets the value of the belopsgrense property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a <CODE>set</CODE> method for the belopsgrense property.
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the belopsgrense property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getBelopsgrense().add(newItem);
+     * getBelopsgrense().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Belopsgrense }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the belopsgrense property.
      */
     public List<Belopsgrense> getBelopsgrense() {
         if (belopsgrense == null) {
-            belopsgrense = new ArrayList<Belopsgrense>();
+            belopsgrense = new ArrayList<>();
         }
         return this.belopsgrense;
     }
 
     /**
+     * Referanse ID 158 dersom tekst tihørende oppdragslinje
+     * 
      * Gets the value of the tekst property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a <CODE>set</CODE> method for the tekst property.
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the tekst property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getTekst().add(newItem);
+     * getTekst().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Tekst }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the tekst property.
      */
     public List<Tekst> getTekst() {
         if (tekst == null) {
-            tekst = new ArrayList<Tekst>();
+            tekst = new ArrayList<>();
         }
         return this.tekst;
     }

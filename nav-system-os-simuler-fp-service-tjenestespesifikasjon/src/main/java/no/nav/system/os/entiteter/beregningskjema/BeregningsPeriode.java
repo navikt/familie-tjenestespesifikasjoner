@@ -11,23 +11,23 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="periodeFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/&gt;
- *         &lt;element name="periodeTom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/&gt;
- *         &lt;element ref="{http://nav.no/system/os/entiteter/beregningSkjema}beregningStoppnivaa" maxOccurs="999"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType>
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="periodeFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/>
+ *         <element name="periodeTom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/>
+ *         <element ref="{http://nav.no/system/os/entiteter/beregningSkjema}beregningStoppnivaa" maxOccurs="999"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -44,6 +44,10 @@ public class BeregningsPeriode {
     protected String periodeFom;
     @XmlElement(required = true)
     protected String periodeTom;
+    /**
+     * Referanse ID 313
+     * 
+     */
     @XmlElement(namespace = "http://nav.no/system/os/entiteter/beregningSkjema", required = true)
     protected List<BeregningStoppnivaa> beregningStoppnivaa;
 
@@ -96,30 +100,35 @@ public class BeregningsPeriode {
     }
 
     /**
+     * Referanse ID 313
+     * 
      * Gets the value of the beregningStoppnivaa property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a <CODE>set</CODE> method for the beregningStoppnivaa property.
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the beregningStoppnivaa property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getBeregningStoppnivaa().add(newItem);
+     * getBeregningStoppnivaa().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link BeregningStoppnivaa }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the beregningStoppnivaa property.
      */
     public List<BeregningStoppnivaa> getBeregningStoppnivaa() {
         if (beregningStoppnivaa == null) {
-            beregningStoppnivaa = new ArrayList<BeregningStoppnivaa>();
+            beregningStoppnivaa = new ArrayList<>();
         }
         return this.beregningStoppnivaa;
     }

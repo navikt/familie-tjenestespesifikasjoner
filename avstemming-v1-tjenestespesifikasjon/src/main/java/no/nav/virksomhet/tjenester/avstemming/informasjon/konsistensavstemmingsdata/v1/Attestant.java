@@ -7,22 +7,22 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for Attestant complex type.
+ * <p>Java class for Attestant complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="Attestant"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="attestantId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="ugyldigFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="Attestant">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="attestantId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="ugyldigFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -33,11 +33,19 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class Attestant {
 
+    /**
+     * Attestant (funksjonærid)
+     * 
+     */
     protected String attestantId;
+    /**
+     * Dato for når attestasjonen ikke er gyldig lengre.  Format åååå-mm-dd
+     * 
+     */
     protected String ugyldigFom;
 
     /**
-     * Gets the value of the attestantId property.
+     * Attestant (funksjonærid)
      * 
      * @return
      *     possible object is
@@ -55,13 +63,14 @@ public class Attestant {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getAttestantId()
      */
     public void setAttestantId(String value) {
         this.attestantId = value;
     }
 
     /**
-     * Gets the value of the ugyldigFom property.
+     * Dato for når attestasjonen ikke er gyldig lengre.  Format åååå-mm-dd
      * 
      * @return
      *     possible object is
@@ -79,6 +88,7 @@ public class Attestant {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getUgyldigFom()
      */
     public void setUgyldigFom(String value) {
         this.ugyldigFom = value;

@@ -14,25 +14,25 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  * Hver slik melding skal starte med id-110 med aksjonskode ’DATA’. Deretter følger de id-kodene som ble brukt da dataene opprinnelig ble overført fra avleverende til mottakende system. For no.nav.virksomhet.tjenester.avstemming mot Oppdragssystemet vil dette være deres id-kode 110, 120, 150 osv.
  * 
- * <p>Java class for Avstemmingsdata complex type.
+ * <p>Java class for Avstemmingsdata complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="Avstemmingsdata"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="aksjon" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Aksjonsdata"/&gt;
- *         &lt;element name="total" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Totaldata" minOccurs="0"/&gt;
- *         &lt;element name="periode" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Periodedata" minOccurs="0"/&gt;
- *         &lt;element name="grunnlag" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Grunnlagsdata" minOccurs="0"/&gt;
- *         &lt;element name="detalj" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Detaljdata" maxOccurs="unbounded" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="Avstemmingsdata">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="aksjon" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Aksjonsdata"/>
+ *         <element name="total" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Totaldata" minOccurs="0"/>
+ *         <element name="periode" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Periodedata" minOccurs="0"/>
+ *         <element name="grunnlag" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Grunnlagsdata" minOccurs="0"/>
+ *         <element name="detalj" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Detaljdata" maxOccurs="unbounded" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -152,28 +152,31 @@ public class Avstemmingsdata {
     /**
      * Gets the value of the detalj property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a <CODE>set</CODE> method for the detalj property.
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the detalj property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getDetalj().add(newItem);
+     * getDetalj().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Detaljdata }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the detalj property.
      */
     public List<Detaljdata> getDetalj() {
         if (detalj == null) {
-            detalj = new ArrayList<Detaljdata>();
+            detalj = new ArrayList<>();
         }
         return this.detalj;
     }

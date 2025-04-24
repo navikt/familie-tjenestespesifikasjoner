@@ -10,22 +10,22 @@ import jakarta.xml.bind.annotation.XmlType;
 /**
  * Avleverende system må også sende med en perioderecord som definerer for hvilken periode avstemmingen gjelder.
  * 
- * <p>Java class for Periodedata complex type.
+ * <p>Java class for Periodedata complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="Periodedata"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="datoAvstemtFom" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="datoAvstemtTom" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="Periodedata">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="datoAvstemtFom" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         <element name="datoAvstemtTom" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -36,13 +36,21 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class Periodedata {
 
+    /**
+     * Angir når avstemmingen gjelder fra, dato og time (ååååmmddhh)
+     * 
+     */
     @XmlElement(required = true)
     protected String datoAvstemtFom;
+    /**
+     * Angir når avstemmingen gjelder til, dato og time (ååååmmddhh)
+     * 
+     */
     @XmlElement(required = true)
     protected String datoAvstemtTom;
 
     /**
-     * Gets the value of the datoAvstemtFom property.
+     * Angir når avstemmingen gjelder fra, dato og time (ååååmmddhh)
      * 
      * @return
      *     possible object is
@@ -60,13 +68,14 @@ public class Periodedata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getDatoAvstemtFom()
      */
     public void setDatoAvstemtFom(String value) {
         this.datoAvstemtFom = value;
     }
 
     /**
-     * Gets the value of the datoAvstemtTom property.
+     * Angir når avstemmingen gjelder til, dato og time (ååååmmddhh)
      * 
      * @return
      *     possible object is
@@ -84,6 +93,7 @@ public class Periodedata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getDatoAvstemtTom()
      */
     public void setDatoAvstemtTom(String value) {
         this.datoAvstemtTom = value;

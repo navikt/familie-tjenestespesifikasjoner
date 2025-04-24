@@ -8,7 +8,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the no.nav.system.os.entiteter.oppdragskjema package. 
- * <p>An ObjectFactory allows you to programatically 
+ * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -32,6 +32,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Enhet }
      * 
+     * @return
+     *     the new instance of {@link Enhet }
      */
     public Enhet createEnhet() {
         return new Enhet();
@@ -40,6 +42,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Belopsgrense }
      * 
+     * @return
+     *     the new instance of {@link Belopsgrense }
      */
     public Belopsgrense createBelopsgrense() {
         return new Belopsgrense();
@@ -48,6 +52,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Tekst }
      * 
+     * @return
+     *     the new instance of {@link Tekst }
      */
     public Tekst createTekst() {
         return new Tekst();
@@ -56,6 +62,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Grad }
      * 
+     * @return
+     *     the new instance of {@link Grad }
      */
     public Grad createGrad() {
         return new Grad();
@@ -64,6 +72,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Attestant }
      * 
+     * @return
+     *     the new instance of {@link Attestant }
      */
     public Attestant createAttestant() {
         return new Attestant();
@@ -72,6 +82,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Valuta }
      * 
+     * @return
+     *     the new instance of {@link Valuta }
      */
     public Valuta createValuta() {
         return new Valuta();
@@ -80,6 +92,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link LinjeStatus }
      * 
+     * @return
+     *     the new instance of {@link LinjeStatus }
      */
     public LinjeStatus createLinjeStatus() {
         return new LinjeStatus();
@@ -88,6 +102,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Klassifikasjon }
      * 
+     * @return
+     *     the new instance of {@link Klassifikasjon }
      */
     public Klassifikasjon createKlassifikasjon() {
         return new Klassifikasjon();
@@ -96,6 +112,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Skyldner }
      * 
+     * @return
+     *     the new instance of {@link Skyldner }
      */
     public Skyldner createSkyldner() {
         return new Skyldner();
@@ -104,6 +122,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Kid }
      * 
+     * @return
+     *     the new instance of {@link Kid }
      */
     public Kid createKid() {
         return new Kid();
@@ -112,6 +132,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UtbetalesTil }
      * 
+     * @return
+     *     the new instance of {@link UtbetalesTil }
      */
     public UtbetalesTil createUtbetalesTil() {
         return new UtbetalesTil();
@@ -120,6 +142,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RefusjonsInfo }
      * 
+     * @return
+     *     the new instance of {@link RefusjonsInfo }
      */
     public RefusjonsInfo createRefusjonsInfo() {
         return new RefusjonsInfo();
@@ -128,6 +152,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Avstemmingsnokkel }
      * 
+     * @return
+     *     the new instance of {@link Avstemmingsnokkel }
      */
     public Avstemmingsnokkel createAvstemmingsnokkel() {
         return new Avstemmingsnokkel();
@@ -136,6 +162,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Ompostering }
      * 
+     * @return
+     *     the new instance of {@link Ompostering }
      */
     public Ompostering createOmpostering() {
         return new Ompostering();
@@ -144,6 +172,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OppdragStatus }
      * 
+     * @return
+     *     the new instance of {@link OppdragStatus }
      */
     public OppdragStatus createOppdragStatus() {
         return new OppdragStatus();
@@ -152,6 +182,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OppdragGjelder }
      * 
+     * @return
+     *     the new instance of {@link OppdragGjelder }
      */
     public OppdragGjelder createOppdragGjelder() {
         return new OppdragGjelder();
@@ -160,6 +192,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Bilagstype }
      * 
+     * @return
+     *     the new instance of {@link Bilagstype }
      */
     public Bilagstype createBilagstype() {
         return new Bilagstype();
@@ -168,6 +202,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Oppdragslinje }
      * 
+     * @return
+     *     the new instance of {@link Oppdragslinje }
      */
     public Oppdragslinje createOppdragslinje() {
         return new Oppdragslinje();
@@ -176,6 +212,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Oppdrag }
      * 
+     * @return
+     *     the new instance of {@link Oppdrag }
      */
     public Oppdrag createOppdrag() {
         return new Oppdrag();

@@ -17,63 +17,63 @@ import no.nav.system.os.entiteter.typer.simpletypes.KodeStatusLinje;
 /**
  * Referanse ID 150
  * 
- * <p>Java class for oppdragslinje complex type.
+ * <p>Java class for oppdragslinje complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="oppdragslinje"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="kodeEndringLinje"&gt;
- *           &lt;simpleType&gt;
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *               &lt;enumeration value="NY"/&gt;
- *               &lt;enumeration value="ENDR"/&gt;
- *             &lt;/restriction&gt;
- *           &lt;/simpleType&gt;
- *         &lt;/element&gt;
- *         &lt;element name="kodeStatusLinje" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeStatusLinje" minOccurs="0"/&gt;
- *         &lt;element name="datoStatusFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
- *         &lt;element name="vedtakId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}vedtakId" minOccurs="0"/&gt;
- *         &lt;element name="delytelseId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}delytelseId" minOccurs="0"/&gt;
- *         &lt;element name="linjeId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}linjeId" minOccurs="0"/&gt;
- *         &lt;element name="kodeKlassifik" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeKlassifik"/&gt;
- *         &lt;element name="datoKlassifikFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
- *         &lt;element name="datoVedtakFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/&gt;
- *         &lt;element name="datoVedtakTom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
- *         &lt;element name="sats" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}sats"/&gt;
- *         &lt;element name="fradragTillegg" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fradragTillegg"/&gt;
- *         &lt;element name="typeSats" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}typeSats"/&gt;
- *         &lt;element name="skyldnerId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr" minOccurs="0"/&gt;
- *         &lt;element name="datoSkyldnerFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
- *         &lt;element name="kravhaverId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr" minOccurs="0"/&gt;
- *         &lt;element name="datoKravhaverFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
- *         &lt;element name="kid" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kid" minOccurs="0"/&gt;
- *         &lt;element name="datoKidFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
- *         &lt;element name="brukKjoreplan" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}brukKjoreplan" minOccurs="0"/&gt;
- *         &lt;element name="saksbehId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}saksbehId"/&gt;
- *         &lt;element name="utbetalesTilId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/&gt;
- *         &lt;element name="datoUtbetalesTilIdFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/&gt;
- *         &lt;element name="kodeArbeidsgiver" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeArbeidsgiver" minOccurs="0"/&gt;
- *         &lt;element name="henvisning" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}henvisning" minOccurs="0"/&gt;
- *         &lt;element name="typeSoknad" minOccurs="0"&gt;
- *           &lt;simpleType&gt;
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *               &lt;maxLength value="10"/&gt;
- *             &lt;/restriction&gt;
- *           &lt;/simpleType&gt;
- *         &lt;/element&gt;
- *         &lt;element name="refFagsystemId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fagsystemId" minOccurs="0"/&gt;
- *         &lt;element name="refOppdragsId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}oppdragsId" minOccurs="0"/&gt;
- *         &lt;element name="refDelytelseId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}delytelseId" minOccurs="0"/&gt;
- *         &lt;element name="refLinjeId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}linjeId" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="oppdragslinje">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="kodeEndringLinje">
+ *           <simpleType>
+ *             <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               <enumeration value="NY"/>
+ *               <enumeration value="ENDR"/>
+ *             </restriction>
+ *           </simpleType>
+ *         </element>
+ *         <element name="kodeStatusLinje" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeStatusLinje" minOccurs="0"/>
+ *         <element name="datoStatusFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
+ *         <element name="vedtakId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}vedtakId" minOccurs="0"/>
+ *         <element name="delytelseId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}delytelseId" minOccurs="0"/>
+ *         <element name="linjeId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}linjeId" minOccurs="0"/>
+ *         <element name="kodeKlassifik" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeKlassifik"/>
+ *         <element name="datoKlassifikFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
+ *         <element name="datoVedtakFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/>
+ *         <element name="datoVedtakTom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
+ *         <element name="sats" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}sats"/>
+ *         <element name="fradragTillegg" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fradragTillegg"/>
+ *         <element name="typeSats" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}typeSats"/>
+ *         <element name="skyldnerId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr" minOccurs="0"/>
+ *         <element name="datoSkyldnerFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
+ *         <element name="kravhaverId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr" minOccurs="0"/>
+ *         <element name="datoKravhaverFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
+ *         <element name="kid" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kid" minOccurs="0"/>
+ *         <element name="datoKidFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
+ *         <element name="brukKjoreplan" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}brukKjoreplan" minOccurs="0"/>
+ *         <element name="saksbehId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}saksbehId"/>
+ *         <element name="utbetalesTilId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/>
+ *         <element name="datoUtbetalesTilIdFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato" minOccurs="0"/>
+ *         <element name="kodeArbeidsgiver" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeArbeidsgiver" minOccurs="0"/>
+ *         <element name="henvisning" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}henvisning" minOccurs="0"/>
+ *         <element name="typeSoknad" minOccurs="0">
+ *           <simpleType>
+ *             <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               <maxLength value="10"/>
+ *             </restriction>
+ *           </simpleType>
+ *         </element>
+ *         <element name="refFagsystemId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fagsystemId" minOccurs="0"/>
+ *         <element name="refOppdragsId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}oppdragsId" minOccurs="0"/>
+ *         <element name="refDelytelseId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}delytelseId" minOccurs="0"/>
+ *         <element name="refLinjeId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}linjeId" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */

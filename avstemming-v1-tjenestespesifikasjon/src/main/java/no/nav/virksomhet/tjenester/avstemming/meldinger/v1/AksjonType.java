@@ -6,19 +6,21 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for AksjonType.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <pre>
- * &lt;simpleType name="AksjonType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="START"/&gt;
- *     &lt;enumeration value="DATA"/&gt;
- *     &lt;enumeration value="AVSL"/&gt;
- *     &lt;enumeration value="HENT"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * 
+ * <p>Java class for AksjonType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="AksjonType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="START"/>
+ *     <enumeration value="DATA"/>
+ *     <enumeration value="AVSL"/>
+ *     <enumeration value="HENT"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "AksjonType")

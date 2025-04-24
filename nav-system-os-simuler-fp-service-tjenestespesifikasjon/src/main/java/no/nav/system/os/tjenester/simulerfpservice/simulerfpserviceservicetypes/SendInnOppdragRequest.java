@@ -8,21 +8,21 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for sendInnOppdragRequest complex type.
+ * <p>Java class for sendInnOppdragRequest complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="sendInnOppdragRequest"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="oppdrag" type="{http://nav.no/system/os/tjenester/simulerFpService/simulerFpServiceServiceTypes}oppdrag"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="sendInnOppdragRequest">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="oppdrag" type="{http://nav.no/system/os/tjenester/simulerFpService/simulerFpServiceServiceTypes}oppdrag"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -32,11 +32,15 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class SendInnOppdragRequest {
 
+    /**
+     * Oppdraget for innsending.
+     * 
+     */
     @XmlElement(required = true)
     protected Oppdrag oppdrag;
 
     /**
-     * Gets the value of the oppdrag property.
+     * Oppdraget for innsending.
      * 
      * @return
      *     possible object is
@@ -54,6 +58,7 @@ public class SendInnOppdragRequest {
      *     allowed object is
      *     {@link Oppdrag }
      *     
+     * @see #getOppdrag()
      */
     public void setOppdrag(Oppdrag value) {
         this.oppdrag = value;

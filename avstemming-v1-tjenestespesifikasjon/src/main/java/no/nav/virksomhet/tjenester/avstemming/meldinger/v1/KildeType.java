@@ -6,17 +6,19 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for KildeType.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <pre>
- * &lt;simpleType name="KildeType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="AVLEV"/&gt;
- *     &lt;enumeration value="MOTT"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * 
+ * <p>Java class for KildeType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="KildeType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="AVLEV"/>
+ *     <enumeration value="MOTT"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "KildeType")
