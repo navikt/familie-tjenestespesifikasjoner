@@ -48,11 +48,6 @@
                                             <wsdlLocation>
                                                 classpath:wsdl/no/nav/system/os/tjenester/simulerFpService/simulerfpservicegrensesnitt.wsdl
                                             </wsdlLocation>
-                                            <bindingFiles>
-                                                <bindingFile>
-                                                    ${basedir}/src/main/resources/wsdl/no/nav/system/os/eksponering/simulerfpservicewsbinding.wsdl
-                                                </bindingFile>
-                                            </bindingFiles>
                                         </wsdlOption>
                                     </wsdlOptions>
                                 </configuration>

@@ -11,32 +11,32 @@ import jakarta.xml.bind.annotation.XmlType;
 /**
  * Grunnlagsrecord (id-130) for å skille mellom antall godkjente og avviste meldinger, antall godkjente med varsel og antall meldinger hvor avleverende system ikke har mottatt kvitteringsmelding.
  * 
- * <p>Java class for Grunnlagsdata complex type.
+ * <p>Java class for Grunnlagsdata complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="Grunnlagsdata"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="godkjentAntall" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="godkjentBelop" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
- *         &lt;element name="godkjentFortegn" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Fortegn" minOccurs="0"/&gt;
- *         &lt;element name="varselAntall" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="varselBelop" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
- *         &lt;element name="varselFortegn" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Fortegn" minOccurs="0"/&gt;
- *         &lt;element name="avvistAntall" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="avvistBelop" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
- *         &lt;element name="avvistFortegn" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Fortegn" minOccurs="0"/&gt;
- *         &lt;element name="manglerAntall" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="manglerBelop" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
- *         &lt;element name="manglerFortegn" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Fortegn" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="Grunnlagsdata">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="godkjentAntall" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         <element name="godkjentBelop" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
+ *         <element name="godkjentFortegn" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Fortegn" minOccurs="0"/>
+ *         <element name="varselAntall" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         <element name="varselBelop" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
+ *         <element name="varselFortegn" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Fortegn" minOccurs="0"/>
+ *         <element name="avvistAntall" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         <element name="avvistBelop" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
+ *         <element name="avvistFortegn" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Fortegn" minOccurs="0"/>
+ *         <element name="manglerAntall" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         <element name="manglerBelop" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
+ *         <element name="manglerFortegn" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}Fortegn" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -57,25 +57,73 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class Grunnlagsdata {
 
+    /**
+     * Antall godkjente meldinger
+     * 
+     */
     protected int godkjentAntall;
+    /**
+     * Sum beløp på godkjente meldinger
+     * 
+     */
     protected BigDecimal godkjentBelop;
+    /**
+     * Angir om beløp er tillegg (T) eller fradrag (F)
+     * 
+     */
     @XmlSchemaType(name = "string")
     protected Fortegn godkjentFortegn;
+    /**
+     * Antall meldinger med varsel
+     * 
+     */
     protected int varselAntall;
+    /**
+     * Sum beløp på meldinger med varsel
+     * 
+     */
     protected BigDecimal varselBelop;
+    /**
+     * Angir om beløp er tillegg (T) eller fradrag (F)
+     * 
+     */
     @XmlSchemaType(name = "string")
     protected Fortegn varselFortegn;
+    /**
+     * Antall avviste meldinger
+     * 
+     */
     protected int avvistAntall;
+    /**
+     * Sum beløp på avviste meldinger
+     * 
+     */
     protected BigDecimal avvistBelop;
+    /**
+     * Angir om beløp er tillegg (T) eller fradrag (F)
+     * 
+     */
     @XmlSchemaType(name = "string")
     protected Fortegn avvistFortegn;
+    /**
+     * Antall meldinger hvor det ikke er mottatt kvittering
+     * 
+     */
     protected int manglerAntall;
+    /**
+     * Sum beløp på meldinger hvor det ikke er mottatt kvittering
+     * 
+     */
     protected BigDecimal manglerBelop;
+    /**
+     * Angir om beløp er tillegg (T) eller fradrag (F)
+     * 
+     */
     @XmlSchemaType(name = "string")
     protected Fortegn manglerFortegn;
 
     /**
-     * Gets the value of the godkjentAntall property.
+     * Antall godkjente meldinger
      * 
      */
     public int getGodkjentAntall() {
@@ -91,7 +139,7 @@ public class Grunnlagsdata {
     }
 
     /**
-     * Gets the value of the godkjentBelop property.
+     * Sum beløp på godkjente meldinger
      * 
      * @return
      *     possible object is
@@ -109,13 +157,14 @@ public class Grunnlagsdata {
      *     allowed object is
      *     {@link BigDecimal }
      *     
+     * @see #getGodkjentBelop()
      */
     public void setGodkjentBelop(BigDecimal value) {
         this.godkjentBelop = value;
     }
 
     /**
-     * Gets the value of the godkjentFortegn property.
+     * Angir om beløp er tillegg (T) eller fradrag (F)
      * 
      * @return
      *     possible object is
@@ -133,13 +182,14 @@ public class Grunnlagsdata {
      *     allowed object is
      *     {@link Fortegn }
      *     
+     * @see #getGodkjentFortegn()
      */
     public void setGodkjentFortegn(Fortegn value) {
         this.godkjentFortegn = value;
     }
 
     /**
-     * Gets the value of the varselAntall property.
+     * Antall meldinger med varsel
      * 
      */
     public int getVarselAntall() {
@@ -155,7 +205,7 @@ public class Grunnlagsdata {
     }
 
     /**
-     * Gets the value of the varselBelop property.
+     * Sum beløp på meldinger med varsel
      * 
      * @return
      *     possible object is
@@ -173,13 +223,14 @@ public class Grunnlagsdata {
      *     allowed object is
      *     {@link BigDecimal }
      *     
+     * @see #getVarselBelop()
      */
     public void setVarselBelop(BigDecimal value) {
         this.varselBelop = value;
     }
 
     /**
-     * Gets the value of the varselFortegn property.
+     * Angir om beløp er tillegg (T) eller fradrag (F)
      * 
      * @return
      *     possible object is
@@ -197,13 +248,14 @@ public class Grunnlagsdata {
      *     allowed object is
      *     {@link Fortegn }
      *     
+     * @see #getVarselFortegn()
      */
     public void setVarselFortegn(Fortegn value) {
         this.varselFortegn = value;
     }
 
     /**
-     * Gets the value of the avvistAntall property.
+     * Antall avviste meldinger
      * 
      */
     public int getAvvistAntall() {
@@ -219,7 +271,7 @@ public class Grunnlagsdata {
     }
 
     /**
-     * Gets the value of the avvistBelop property.
+     * Sum beløp på avviste meldinger
      * 
      * @return
      *     possible object is
@@ -237,13 +289,14 @@ public class Grunnlagsdata {
      *     allowed object is
      *     {@link BigDecimal }
      *     
+     * @see #getAvvistBelop()
      */
     public void setAvvistBelop(BigDecimal value) {
         this.avvistBelop = value;
     }
 
     /**
-     * Gets the value of the avvistFortegn property.
+     * Angir om beløp er tillegg (T) eller fradrag (F)
      * 
      * @return
      *     possible object is
@@ -261,13 +314,14 @@ public class Grunnlagsdata {
      *     allowed object is
      *     {@link Fortegn }
      *     
+     * @see #getAvvistFortegn()
      */
     public void setAvvistFortegn(Fortegn value) {
         this.avvistFortegn = value;
     }
 
     /**
-     * Gets the value of the manglerAntall property.
+     * Antall meldinger hvor det ikke er mottatt kvittering
      * 
      */
     public int getManglerAntall() {
@@ -283,7 +337,7 @@ public class Grunnlagsdata {
     }
 
     /**
-     * Gets the value of the manglerBelop property.
+     * Sum beløp på meldinger hvor det ikke er mottatt kvittering
      * 
      * @return
      *     possible object is
@@ -301,13 +355,14 @@ public class Grunnlagsdata {
      *     allowed object is
      *     {@link BigDecimal }
      *     
+     * @see #getManglerBelop()
      */
     public void setManglerBelop(BigDecimal value) {
         this.manglerBelop = value;
     }
 
     /**
-     * Gets the value of the manglerFortegn property.
+     * Angir om beløp er tillegg (T) eller fradrag (F)
      * 
      * @return
      *     possible object is
@@ -325,6 +380,7 @@ public class Grunnlagsdata {
      *     allowed object is
      *     {@link Fortegn }
      *     
+     * @see #getManglerFortegn()
      */
     public void setManglerFortegn(Fortegn value) {
         this.manglerFortegn = value;

@@ -8,24 +8,24 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for Belopsgrense complex type.
+ * <p>Java class for Belopsgrense complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="Belopsgrense"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="grenseType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="belopsgrense" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
- *         &lt;element name="grensePeriode" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Periode" minOccurs="0"/&gt;
- *         &lt;element name="feilregistrering" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="Belopsgrense">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="grenseType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="belopsgrense" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
+ *         <element name="grensePeriode" type="{http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1}Periode" minOccurs="0"/>
+ *         <element name="feilregistrering" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -38,13 +38,29 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class Belopsgrense {
 
+    /**
+     * Kan være f.eks. min- og max utbetalingsbeløp.
+     * 
+     */
     protected String grenseType;
+    /**
+     * Grensebeløpet til utbetaling
+     * 
+     */
     protected BigDecimal belopsgrense;
+    /**
+     * Når grensebeløpet gjelder fra-og-med / til-og-med
+     * 
+     */
     protected Periode grensePeriode;
+    /**
+     * Settes til J hvis beløpsgrensen var en feilregistrering
+     * 
+     */
     protected String feilregistrering;
 
     /**
-     * Gets the value of the grenseType property.
+     * Kan være f.eks. min- og max utbetalingsbeløp.
      * 
      * @return
      *     possible object is
@@ -62,13 +78,14 @@ public class Belopsgrense {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getGrenseType()
      */
     public void setGrenseType(String value) {
         this.grenseType = value;
     }
 
     /**
-     * Gets the value of the belopsgrense property.
+     * Grensebeløpet til utbetaling
      * 
      * @return
      *     possible object is
@@ -86,13 +103,14 @@ public class Belopsgrense {
      *     allowed object is
      *     {@link BigDecimal }
      *     
+     * @see #getBelopsgrense()
      */
     public void setBelopsgrense(BigDecimal value) {
         this.belopsgrense = value;
     }
 
     /**
-     * Gets the value of the grensePeriode property.
+     * Når grensebeløpet gjelder fra-og-med / til-og-med
      * 
      * @return
      *     possible object is
@@ -110,13 +128,14 @@ public class Belopsgrense {
      *     allowed object is
      *     {@link Periode }
      *     
+     * @see #getGrensePeriode()
      */
     public void setGrensePeriode(Periode value) {
         this.grensePeriode = value;
     }
 
     /**
-     * Gets the value of the feilregistrering property.
+     * Settes til J hvis beløpsgrensen var en feilregistrering
      * 
      * @return
      *     possible object is
@@ -134,6 +153,7 @@ public class Belopsgrense {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getFeilregistrering()
      */
     public void setFeilregistrering(String value) {
         this.feilregistrering = value;

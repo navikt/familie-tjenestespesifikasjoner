@@ -8,7 +8,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the no.nav.system.os.entiteter.beregningskjema package. 
- * <p>An ObjectFactory allows you to programatically 
+ * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -32,6 +32,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BeregningsPeriode }
      * 
+     * @return
+     *     the new instance of {@link BeregningsPeriode }
      */
     public BeregningsPeriode createBeregningsPeriode() {
         return new BeregningsPeriode();
@@ -40,6 +42,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BeregningStoppnivaa }
      * 
+     * @return
+     *     the new instance of {@link BeregningStoppnivaa }
      */
     public BeregningStoppnivaa createBeregningStoppnivaa() {
         return new BeregningStoppnivaa();
@@ -48,6 +52,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link BeregningStoppnivaaDetaljer }
      * 
+     * @return
+     *     the new instance of {@link BeregningStoppnivaaDetaljer }
      */
     public BeregningStoppnivaaDetaljer createBeregningStoppnivaaDetaljer() {
         return new BeregningStoppnivaaDetaljer();
@@ -56,6 +62,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Beregning }
      * 
+     * @return
+     *     the new instance of {@link Beregning }
      */
     public Beregning createBeregning() {
         return new Beregning();

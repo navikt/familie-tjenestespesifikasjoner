@@ -11,31 +11,31 @@ import jakarta.xml.bind.annotation.XmlType;
 /**
  * Enhver no.nav.virksomhet.tjenester.avstemming må initieres og avsluttes med en 110-record, på det formatet som er beskrevet her
  * 
- * <p>Java class for Aksjonsdata complex type.
+ * <p>Java class for Aksjonsdata complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="Aksjonsdata"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="aksjonType" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}AksjonType"/&gt;
- *         &lt;element name="kildeType" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}KildeType"/&gt;
- *         &lt;element name="avstemmingType" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}AvstemmingType"/&gt;
- *         &lt;element name="avleverendeKomponentKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="mottakendeKomponentKode" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="underkomponentKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="nokkelFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="nokkelTom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="tidspunktAvstemmingTom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="avleverendeAvstemmingId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="brukerId" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="Aksjonsdata">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="aksjonType" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}AksjonType"/>
+ *         <element name="kildeType" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}KildeType"/>
+ *         <element name="avstemmingType" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}AvstemmingType"/>
+ *         <element name="avleverendeKomponentKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="mottakendeKomponentKode" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         <element name="underkomponentKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="nokkelFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="nokkelTom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="tidspunktAvstemmingTom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="avleverendeAvstemmingId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="brukerId" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -55,28 +55,72 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class Aksjonsdata {
 
+    /**
+     * Aksjonskoden settes til ’START’ når avstemmingen starter og ’AVSL’ når alle avstemmingsdata er overført. Aksjonskode ’DATA’ benyttes når selve avstemmingsdatene skal overføres. Aksjonskode ’HENT’ benyttes dersom mottakende komponent har behov for å finne avstemminger som er påbegynt fra avleverende komponent, men mangler data fra mottakende komponent.
+     * 
+     */
     @XmlElement(required = true)
     @XmlSchemaType(name = "string")
     protected AksjonType aksjonType;
+    /**
+     * Skal ha verdien ’AVLEV’ når en no.nav.virksomhet.tjenester.avstemming initieres fra avleverende komponent og ’MOTT’ når det er mottakende komponent som skal overføre sine data.
+     * 
+     */
     @XmlElement(required = true)
     @XmlSchemaType(name = "string")
     protected KildeType kildeType;
+    /**
+     * identifiserer hvilken type no.nav.virksomhet.tjenester.avstemming det gjelder
+     * 
+     */
     @XmlElement(required = true)
     @XmlSchemaType(name = "string")
     protected AvstemmingType avstemmingType;
+    /**
+     * Identifiserer avleverende komponent av dataene som skal avstemmes
+     * 
+     */
     protected String avleverendeKomponentKode;
+    /**
+     * Identifiserer mottakende komponent av dataene som skal avstemmes
+     * 
+     */
     @XmlElement(required = true)
     protected String mottakendeKomponentKode;
+    /**
+     * f.eks. hvilket fagområde som skal avstemmes
+     * 
+     */
     protected String underkomponentKode;
+    /**
+     * Identifikasjon av data som skal grensesnittavstemmes
+     * 
+     */
     protected String nokkelFom;
+    /**
+     * Identifikasjon av data som skal grensesnittavstemmes
+     * 
+     */
     protected String nokkelTom;
+    /**
+     * Angir høyeste tidspunkt for transaksjoner som skal inngå i konsistensavstemming (format: åååå-mm-dd-hh.mm.ss.nnnnnn)
+     * 
+     */
     protected String tidspunktAvstemmingTom;
+    /**
+     * Avleverende systems unike avstemmings-id
+     * 
+     */
     protected String avleverendeAvstemmingId;
+    /**
+     * saksbehandler
+     * 
+     */
     @XmlElement(required = true)
     protected String brukerId;
 
     /**
-     * Gets the value of the aksjonType property.
+     * Aksjonskoden settes til ’START’ når avstemmingen starter og ’AVSL’ når alle avstemmingsdata er overført. Aksjonskode ’DATA’ benyttes når selve avstemmingsdatene skal overføres. Aksjonskode ’HENT’ benyttes dersom mottakende komponent har behov for å finne avstemminger som er påbegynt fra avleverende komponent, men mangler data fra mottakende komponent.
      * 
      * @return
      *     possible object is
@@ -94,13 +138,14 @@ public class Aksjonsdata {
      *     allowed object is
      *     {@link AksjonType }
      *     
+     * @see #getAksjonType()
      */
     public void setAksjonType(AksjonType value) {
         this.aksjonType = value;
     }
 
     /**
-     * Gets the value of the kildeType property.
+     * Skal ha verdien ’AVLEV’ når en no.nav.virksomhet.tjenester.avstemming initieres fra avleverende komponent og ’MOTT’ når det er mottakende komponent som skal overføre sine data.
      * 
      * @return
      *     possible object is
@@ -118,13 +163,14 @@ public class Aksjonsdata {
      *     allowed object is
      *     {@link KildeType }
      *     
+     * @see #getKildeType()
      */
     public void setKildeType(KildeType value) {
         this.kildeType = value;
     }
 
     /**
-     * Gets the value of the avstemmingType property.
+     * identifiserer hvilken type no.nav.virksomhet.tjenester.avstemming det gjelder
      * 
      * @return
      *     possible object is
@@ -142,13 +188,14 @@ public class Aksjonsdata {
      *     allowed object is
      *     {@link AvstemmingType }
      *     
+     * @see #getAvstemmingType()
      */
     public void setAvstemmingType(AvstemmingType value) {
         this.avstemmingType = value;
     }
 
     /**
-     * Gets the value of the avleverendeKomponentKode property.
+     * Identifiserer avleverende komponent av dataene som skal avstemmes
      * 
      * @return
      *     possible object is
@@ -166,13 +213,14 @@ public class Aksjonsdata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getAvleverendeKomponentKode()
      */
     public void setAvleverendeKomponentKode(String value) {
         this.avleverendeKomponentKode = value;
     }
 
     /**
-     * Gets the value of the mottakendeKomponentKode property.
+     * Identifiserer mottakende komponent av dataene som skal avstemmes
      * 
      * @return
      *     possible object is
@@ -190,13 +238,14 @@ public class Aksjonsdata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getMottakendeKomponentKode()
      */
     public void setMottakendeKomponentKode(String value) {
         this.mottakendeKomponentKode = value;
     }
 
     /**
-     * Gets the value of the underkomponentKode property.
+     * f.eks. hvilket fagområde som skal avstemmes
      * 
      * @return
      *     possible object is
@@ -214,13 +263,14 @@ public class Aksjonsdata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getUnderkomponentKode()
      */
     public void setUnderkomponentKode(String value) {
         this.underkomponentKode = value;
     }
 
     /**
-     * Gets the value of the nokkelFom property.
+     * Identifikasjon av data som skal grensesnittavstemmes
      * 
      * @return
      *     possible object is
@@ -238,13 +288,14 @@ public class Aksjonsdata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getNokkelFom()
      */
     public void setNokkelFom(String value) {
         this.nokkelFom = value;
     }
 
     /**
-     * Gets the value of the nokkelTom property.
+     * Identifikasjon av data som skal grensesnittavstemmes
      * 
      * @return
      *     possible object is
@@ -262,13 +313,14 @@ public class Aksjonsdata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getNokkelTom()
      */
     public void setNokkelTom(String value) {
         this.nokkelTom = value;
     }
 
     /**
-     * Gets the value of the tidspunktAvstemmingTom property.
+     * Angir høyeste tidspunkt for transaksjoner som skal inngå i konsistensavstemming (format: åååå-mm-dd-hh.mm.ss.nnnnnn)
      * 
      * @return
      *     possible object is
@@ -286,13 +338,14 @@ public class Aksjonsdata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getTidspunktAvstemmingTom()
      */
     public void setTidspunktAvstemmingTom(String value) {
         this.tidspunktAvstemmingTom = value;
     }
 
     /**
-     * Gets the value of the avleverendeAvstemmingId property.
+     * Avleverende systems unike avstemmings-id
      * 
      * @return
      *     possible object is
@@ -310,13 +363,14 @@ public class Aksjonsdata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getAvleverendeAvstemmingId()
      */
     public void setAvleverendeAvstemmingId(String value) {
         this.avleverendeAvstemmingId = value;
     }
 
     /**
-     * Gets the value of the brukerId property.
+     * saksbehandler
      * 
      * @return
      *     possible object is
@@ -334,6 +388,7 @@ public class Aksjonsdata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getBrukerId()
      */
     public void setBrukerId(String value) {
         this.brukerId = value;

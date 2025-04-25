@@ -12,32 +12,32 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="kodeFagomraade" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeFagomraade"/&gt;
- *         &lt;element name="stoppNivaaId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}linjeId"/&gt;
- *         &lt;element name="behandlendeEnhet" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}enhet"/&gt;
- *         &lt;element name="oppdragsId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}oppdragsId"/&gt;
- *         &lt;element name="fagsystemId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fagsystemId"/&gt;
- *         &lt;element name="kid" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kid"/&gt;
- *         &lt;element name="utbetalesTilId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/&gt;
- *         &lt;element name="utbetalesTilNavn" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}navn"/&gt;
- *         &lt;element name="bilagsType" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeBilagsType"/&gt;
- *         &lt;element name="forfall" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/&gt;
- *         &lt;element name="feilkonto" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
- *         &lt;element ref="{http://nav.no/system/os/entiteter/beregningSkjema}beregningStoppnivaaDetaljer" maxOccurs="999"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType>
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="kodeFagomraade" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeFagomraade"/>
+ *         <element name="stoppNivaaId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}linjeId"/>
+ *         <element name="behandlendeEnhet" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}enhet"/>
+ *         <element name="oppdragsId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}oppdragsId"/>
+ *         <element name="fagsystemId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fagsystemId"/>
+ *         <element name="kid" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kid"/>
+ *         <element name="utbetalesTilId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/>
+ *         <element name="utbetalesTilNavn" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}navn"/>
+ *         <element name="bilagsType" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeBilagsType"/>
+ *         <element name="forfall" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/>
+ *         <element name="feilkonto" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         <element ref="{http://nav.no/system/os/entiteter/beregningSkjema}beregningStoppnivaaDetaljer" maxOccurs="999"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -79,6 +79,10 @@ public class BeregningStoppnivaa {
     @XmlElement(required = true)
     protected String forfall;
     protected boolean feilkonto;
+    /**
+     * Referanse ID 314
+     * 
+     */
     @XmlElement(namespace = "http://nav.no/system/os/entiteter/beregningSkjema", required = true)
     protected List<BeregningStoppnivaaDetaljer> beregningStoppnivaaDetaljer;
 
@@ -331,30 +335,35 @@ public class BeregningStoppnivaa {
     }
 
     /**
+     * Referanse ID 314
+     * 
      * Gets the value of the beregningStoppnivaaDetaljer property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a <CODE>set</CODE> method for the beregningStoppnivaaDetaljer property.
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the beregningStoppnivaaDetaljer property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getBeregningStoppnivaaDetaljer().add(newItem);
+     * getBeregningStoppnivaaDetaljer().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link BeregningStoppnivaaDetaljer }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the beregningStoppnivaaDetaljer property.
      */
     public List<BeregningStoppnivaaDetaljer> getBeregningStoppnivaaDetaljer() {
         if (beregningStoppnivaaDetaljer == null) {
-            beregningStoppnivaaDetaljer = new ArrayList<BeregningStoppnivaaDetaljer>();
+            beregningStoppnivaaDetaljer = new ArrayList<>();
         }
         return this.beregningStoppnivaaDetaljer;
     }

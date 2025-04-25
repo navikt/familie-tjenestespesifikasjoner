@@ -11,51 +11,51 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="faktiskFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/&gt;
- *         &lt;element name="faktiskTom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/&gt;
- *         &lt;element name="kontoStreng"&gt;
- *           &lt;simpleType&gt;
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *               &lt;minLength value="0"/&gt;
- *               &lt;maxLength value="19"/&gt;
- *             &lt;/restriction&gt;
- *           &lt;/simpleType&gt;
- *         &lt;/element&gt;
- *         &lt;element name="behandlingskode" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}string1"/&gt;
- *         &lt;element name="belop" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}belop"/&gt;
- *         &lt;element name="trekkVedtakId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}trekkVedtakId"/&gt;
- *         &lt;element name="stonadId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}stonadId"/&gt;
- *         &lt;element name="korrigering" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}string1"/&gt;
- *         &lt;element name="tilbakeforing" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
- *         &lt;element name="linjeId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}linjeId"/&gt;
- *         &lt;element name="sats" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}sats"/&gt;
- *         &lt;element name="typeSats" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}typeSats"/&gt;
- *         &lt;element name="antallSats" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}antallSats"/&gt;
- *         &lt;element name="saksbehId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}saksbehId"/&gt;
- *         &lt;element name="uforeGrad" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}grad"/&gt;
- *         &lt;element name="kravhaverId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/&gt;
- *         &lt;element name="delytelseId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}delytelseId"/&gt;
- *         &lt;element name="bostedsenhet" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}enhet"/&gt;
- *         &lt;element name="skykldnerId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/&gt;
- *         &lt;element name="klassekode" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeKlasse"/&gt;
- *         &lt;element name="klasseKodeBeskrivelse" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeKlasseBeskrivelse"/&gt;
- *         &lt;element name="typeKlasse" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}typeKlasse"/&gt;
- *         &lt;element name="typeKlasseBeskrivelse" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}typeKlasseBeskrivelse"/&gt;
- *         &lt;element name="refunderesOrgNr" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType>
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="faktiskFom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/>
+ *         <element name="faktiskTom" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/>
+ *         <element name="kontoStreng">
+ *           <simpleType>
+ *             <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *               <minLength value="0"/>
+ *               <maxLength value="19"/>
+ *             </restriction>
+ *           </simpleType>
+ *         </element>
+ *         <element name="behandlingskode" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}string1"/>
+ *         <element name="belop" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}belop"/>
+ *         <element name="trekkVedtakId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}trekkVedtakId"/>
+ *         <element name="stonadId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}stonadId"/>
+ *         <element name="korrigering" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}string1"/>
+ *         <element name="tilbakeforing" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         <element name="linjeId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}linjeId"/>
+ *         <element name="sats" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}sats"/>
+ *         <element name="typeSats" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}typeSats"/>
+ *         <element name="antallSats" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}antallSats"/>
+ *         <element name="saksbehId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}saksbehId"/>
+ *         <element name="uforeGrad" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}grad"/>
+ *         <element name="kravhaverId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/>
+ *         <element name="delytelseId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}delytelseId"/>
+ *         <element name="bostedsenhet" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}enhet"/>
+ *         <element name="skykldnerId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/>
+ *         <element name="klassekode" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeKlasse"/>
+ *         <element name="klasseKodeBeskrivelse" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeKlasseBeskrivelse"/>
+ *         <element name="typeKlasse" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}typeKlasse"/>
+ *         <element name="typeKlasseBeskrivelse" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}typeKlasseBeskrivelse"/>
+ *         <element name="refunderesOrgNr" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -93,6 +93,10 @@ public class BeregningStoppnivaaDetaljer {
     protected String faktiskFom;
     @XmlElement(required = true)
     protected String faktiskTom;
+    /**
+     * Samensatt konkatenert felt: Hovedkontonr||Underkontonr||Formålskode||Aktivitetskode
+     * 
+     */
     @XmlElement(required = true)
     protected String kontoStreng;
     @XmlElement(required = true)
@@ -185,7 +189,7 @@ public class BeregningStoppnivaaDetaljer {
     }
 
     /**
-     * Gets the value of the kontoStreng property.
+     * Samensatt konkatenert felt: Hovedkontonr||Underkontonr||Formålskode||Aktivitetskode
      * 
      * @return
      *     possible object is
@@ -203,6 +207,7 @@ public class BeregningStoppnivaaDetaljer {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getKontoStreng()
      */
     public void setKontoStreng(String value) {
         this.kontoStreng = value;

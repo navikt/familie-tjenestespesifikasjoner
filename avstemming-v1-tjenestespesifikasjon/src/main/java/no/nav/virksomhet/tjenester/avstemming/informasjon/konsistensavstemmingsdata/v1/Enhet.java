@@ -7,23 +7,23 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for Enhet complex type.
+ * <p>Java class for Enhet complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="Enhet"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="enhetType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="enhet" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="enhetFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="Enhet">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="enhetType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="enhet" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="enhetFom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -35,12 +35,24 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class Enhet {
 
+    /**
+     * Enhetstype angir hva slags type enhet som mottas. Kodeverk for enhet, for eks BEH eller BOS.
+     * 
+     */
     protected String enhetType;
+    /**
+     * Enhet identifiserer den aktuelle enheten
+     * 
+     */
     protected String enhet;
+    /**
+     * Dato-enhet-fom angir når denne gjelder fra (åååå-mm-dd)
+     * 
+     */
     protected String enhetFom;
 
     /**
-     * Gets the value of the enhetType property.
+     * Enhetstype angir hva slags type enhet som mottas. Kodeverk for enhet, for eks BEH eller BOS.
      * 
      * @return
      *     possible object is
@@ -58,13 +70,14 @@ public class Enhet {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getEnhetType()
      */
     public void setEnhetType(String value) {
         this.enhetType = value;
     }
 
     /**
-     * Gets the value of the enhet property.
+     * Enhet identifiserer den aktuelle enheten
      * 
      * @return
      *     possible object is
@@ -82,13 +95,14 @@ public class Enhet {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getEnhet()
      */
     public void setEnhet(String value) {
         this.enhet = value;
     }
 
     /**
-     * Gets the value of the enhetFom property.
+     * Dato-enhet-fom angir når denne gjelder fra (åååå-mm-dd)
      * 
      * @return
      *     possible object is
@@ -106,6 +120,7 @@ public class Enhet {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getEnhetFom()
      */
     public void setEnhetFom(String value) {
         this.enhetFom = value;

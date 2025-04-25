@@ -8,7 +8,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the no.nav.okonomi.tilbakekrevingservice package. 
- * <p>An ObjectFactory allows you to programatically 
+ * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -32,6 +32,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TilbakekrevingsvedtakRequest }
      * 
+     * @return
+     *     the new instance of {@link TilbakekrevingsvedtakRequest }
      */
     public TilbakekrevingsvedtakRequest createTilbakekrevingsvedtakRequest() {
         return new TilbakekrevingsvedtakRequest();
@@ -40,6 +42,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link TilbakekrevingsvedtakResponse }
      * 
+     * @return
+     *     the new instance of {@link TilbakekrevingsvedtakResponse }
      */
     public TilbakekrevingsvedtakResponse createTilbakekrevingsvedtakResponse() {
         return new TilbakekrevingsvedtakResponse();
@@ -48,6 +52,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link KravgrunnlagHentListeRequest }
      * 
+     * @return
+     *     the new instance of {@link KravgrunnlagHentListeRequest }
      */
     public KravgrunnlagHentListeRequest createKravgrunnlagHentListeRequest() {
         return new KravgrunnlagHentListeRequest();
@@ -56,6 +62,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link KravgrunnlagHentListeResponse }
      * 
+     * @return
+     *     the new instance of {@link KravgrunnlagHentListeResponse }
      */
     public KravgrunnlagHentListeResponse createKravgrunnlagHentListeResponse() {
         return new KravgrunnlagHentListeResponse();
@@ -64,6 +72,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link KravgrunnlagHentDetaljRequest }
      * 
+     * @return
+     *     the new instance of {@link KravgrunnlagHentDetaljRequest }
      */
     public KravgrunnlagHentDetaljRequest createKravgrunnlagHentDetaljRequest() {
         return new KravgrunnlagHentDetaljRequest();
@@ -72,6 +82,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link KravgrunnlagHentDetaljResponse }
      * 
+     * @return
+     *     the new instance of {@link KravgrunnlagHentDetaljResponse }
      */
     public KravgrunnlagHentDetaljResponse createKravgrunnlagHentDetaljResponse() {
         return new KravgrunnlagHentDetaljResponse();
@@ -80,6 +92,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link KravgrunnlagAnnulerRequest }
      * 
+     * @return
+     *     the new instance of {@link KravgrunnlagAnnulerRequest }
      */
     public KravgrunnlagAnnulerRequest createKravgrunnlagAnnulerRequest() {
         return new KravgrunnlagAnnulerRequest();
@@ -88,6 +102,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link KravgrunnlagAnnulerResponse }
      * 
+     * @return
+     *     the new instance of {@link KravgrunnlagAnnulerResponse }
      */
     public KravgrunnlagAnnulerResponse createKravgrunnlagAnnulerResponse() {
         return new KravgrunnlagAnnulerResponse();

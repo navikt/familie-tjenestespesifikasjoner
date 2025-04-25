@@ -11,7 +11,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the no.nav.virksomhet.tjenester.avstemming.informasjon.konsistensavstemmingsdata.v1 package. 
- * <p>An ObjectFactory allows you to programatically 
+ * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -24,7 +24,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Konsistensavstemmingsdata_QNAME = new QName("http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1", "konsistensavstemmingsdata");
+    private static final QName _Konsistensavstemmingsdata_QNAME = new QName("http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1", "konsistensavstemmingsdata");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: no.nav.virksomhet.tjenester.avstemming.informasjon.konsistensavstemmingsdata.v1
@@ -36,6 +36,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Konsistensavstemmingsdata }
      * 
+     * @return
+     *     the new instance of {@link Konsistensavstemmingsdata }
      */
     public Konsistensavstemmingsdata createKonsistensavstemmingsdata() {
         return new Konsistensavstemmingsdata();
@@ -44,6 +46,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Valuta }
      * 
+     * @return
+     *     the new instance of {@link Valuta }
      */
     public Valuta createValuta() {
         return new Valuta();
@@ -52,6 +56,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Oppdragslinje }
      * 
+     * @return
+     *     the new instance of {@link Oppdragslinje }
      */
     public Oppdragslinje createOppdragslinje() {
         return new Oppdragslinje();
@@ -60,6 +66,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Belopsgrense }
      * 
+     * @return
+     *     the new instance of {@link Belopsgrense }
      */
     public Belopsgrense createBelopsgrense() {
         return new Belopsgrense();
@@ -68,6 +76,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Periode }
      * 
+     * @return
+     *     the new instance of {@link Periode }
      */
     public Periode createPeriode() {
         return new Periode();
@@ -76,6 +86,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Aksjonsdata }
      * 
+     * @return
+     *     the new instance of {@link Aksjonsdata }
      */
     public Aksjonsdata createAksjonsdata() {
         return new Aksjonsdata();
@@ -84,6 +96,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Totaldata }
      * 
+     * @return
+     *     the new instance of {@link Totaldata }
      */
     public Totaldata createTotaldata() {
         return new Totaldata();
@@ -92,6 +106,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Enhet }
      * 
+     * @return
+     *     the new instance of {@link Enhet }
      */
     public Enhet createEnhet() {
         return new Enhet();
@@ -100,6 +116,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Grad }
      * 
+     * @return
+     *     the new instance of {@link Grad }
      */
     public Grad createGrad() {
         return new Grad();
@@ -108,6 +126,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Oppdragsdata }
      * 
+     * @return
+     *     the new instance of {@link Oppdragsdata }
      */
     public Oppdragsdata createOppdragsdata() {
         return new Oppdragsdata();
@@ -116,6 +136,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Attestant }
      * 
+     * @return
+     *     the new instance of {@link Attestant }
      */
     public Attestant createAttestant() {
         return new Attestant();
@@ -124,6 +146,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Tekst }
      * 
+     * @return
+     *     the new instance of {@link Tekst }
      */
     public Tekst createTekst() {
         return new Tekst();
@@ -132,6 +156,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendAsynkronKonsistensavstemmingsdataRequest }
      * 
+     * @return
+     *     the new instance of {@link SendAsynkronKonsistensavstemmingsdataRequest }
      */
     public SendAsynkronKonsistensavstemmingsdataRequest createSendAsynkronKonsistensavstemmingsdataRequest() {
         return new SendAsynkronKonsistensavstemmingsdataRequest();
@@ -147,7 +173,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://nav.no/virksomhet/tjenester/avstemming/informasjon/konsistensavstemmingsdata/v1", name = "konsistensavstemmingsdata")
     public JAXBElement<Konsistensavstemmingsdata> createKonsistensavstemmingsdata(Konsistensavstemmingsdata value) {
-        return new JAXBElement<Konsistensavstemmingsdata>(_Konsistensavstemmingsdata_QNAME, Konsistensavstemmingsdata.class, null, value);
+        return new JAXBElement<>(_Konsistensavstemmingsdata_QNAME, Konsistensavstemmingsdata.class, null, value);
     }
 
 }

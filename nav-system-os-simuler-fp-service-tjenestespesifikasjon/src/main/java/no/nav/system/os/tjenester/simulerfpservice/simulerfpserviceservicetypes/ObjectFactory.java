@@ -8,7 +8,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the no.nav.system.os.tjenester.simulerfpservice.simulerfpserviceservicetypes package. 
- * <p>An ObjectFactory allows you to programatically 
+ * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -32,6 +32,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SimulerBeregningRequest }
      * 
+     * @return
+     *     the new instance of {@link SimulerBeregningRequest }
      */
     public SimulerBeregningRequest createSimulerBeregningRequest() {
         return new SimulerBeregningRequest();
@@ -40,6 +42,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Oppdragslinje }
      * 
+     * @return
+     *     the new instance of {@link Oppdragslinje }
      */
     public Oppdragslinje createOppdragslinje() {
         return new Oppdragslinje();
@@ -48,6 +52,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Oppdrag }
      * 
+     * @return
+     *     the new instance of {@link Oppdrag }
      */
     public Oppdrag createOppdrag() {
         return new Oppdrag();
@@ -56,6 +62,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendInnOppdragRequest }
      * 
+     * @return
+     *     the new instance of {@link SendInnOppdragRequest }
      */
     public SendInnOppdragRequest createSendInnOppdragRequest() {
         return new SendInnOppdragRequest();
@@ -64,6 +72,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SendInnOppdragResponse }
      * 
+     * @return
+     *     the new instance of {@link SendInnOppdragResponse }
      */
     public SendInnOppdragResponse createSendInnOppdragResponse() {
         return new SendInnOppdragResponse();
@@ -72,6 +82,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SimulerBeregningResponse }
      * 
+     * @return
+     *     the new instance of {@link SimulerBeregningResponse }
      */
     public SimulerBeregningResponse createSimulerBeregningResponse() {
         return new SimulerBeregningResponse();
@@ -80,6 +92,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link SimulerBeregningRequest.SimuleringsPeriode }
      * 
+     * @return
+     *     the new instance of {@link SimulerBeregningRequest.SimuleringsPeriode }
      */
     public SimulerBeregningRequest.SimuleringsPeriode createSimulerBeregningRequestSimuleringsPeriode() {
         return new SimulerBeregningRequest.SimuleringsPeriode();

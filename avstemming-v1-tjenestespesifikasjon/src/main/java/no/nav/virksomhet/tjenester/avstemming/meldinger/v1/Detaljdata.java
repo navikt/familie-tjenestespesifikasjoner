@@ -11,27 +11,27 @@ import jakarta.xml.bind.annotation.XmlType;
 /**
  * Grensesnittavstemmingen kan inneholde detaljer på avviste meldinger, godkjente meldinger med varsel og meldinger hvor avleverende system ikke har mottatt kvitteringsmelding. Det kan ikke overføres 140-data uten at det også er overført en id-130. Det må overføres ID140 dersom det finnes avviste meldinger eller meldinger hvor det mangler kvittering.
  * 
- * <p>Java class for Detaljdata complex type.
+ * <p>Java class for Detaljdata complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="Detaljdata"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="detaljType" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}DetaljType"/&gt;
- *         &lt;element name="offnr" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="avleverendeTransaksjonNokkel" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="meldingKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="alvorlighetsgrad" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="tekstMelding" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="tidspunkt" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="Detaljdata">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="detaljType" type="{http://nav.no/virksomhet/tjenester/avstemming/meldinger/v1}DetaljType"/>
+ *         <element name="offnr" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         <element name="avleverendeTransaksjonNokkel" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         <element name="meldingKode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="alvorlighetsgrad" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="tekstMelding" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         <element name="tidspunkt" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -47,21 +47,49 @@ import jakarta.xml.bind.annotation.XmlType;
 })
 public class Detaljdata {
 
+    /**
+     * Angir hvilken type detaljen gjelder
+     * 
+     */
     @XmlElement(required = true)
     @XmlSchemaType(name = "string")
     protected DetaljType detaljType;
+    /**
+     * Hvem detaljen hjelder, kan inneholde dnr/fnr, TSS-nr eller Orgnr.
+     * 
+     */
     @XmlElement(required = true)
     protected String offnr;
+    /**
+     * Avleverende systems identifikasjon av vedtaket
+     * 
+     */
     @XmlElement(required = true)
     protected String avleverendeTransaksjonNokkel;
+    /**
+     * Meldingkode på varsel/feil
+     * 
+     */
     protected String meldingKode;
+    /**
+     * Angir alvorlighetsgraden på varsel/feil
+     * 
+     */
     protected String alvorlighetsgrad;
+    /**
+     * Meldingstekst på varsel/feil
+     * 
+     */
     protected String tekstMelding;
+    /**
+     * Når meldingen ble sendt/mottatt
+     * 
+     */
     @XmlElement(required = true)
     protected String tidspunkt;
 
     /**
-     * Gets the value of the detaljType property.
+     * Angir hvilken type detaljen gjelder
      * 
      * @return
      *     possible object is
@@ -79,13 +107,14 @@ public class Detaljdata {
      *     allowed object is
      *     {@link DetaljType }
      *     
+     * @see #getDetaljType()
      */
     public void setDetaljType(DetaljType value) {
         this.detaljType = value;
     }
 
     /**
-     * Gets the value of the offnr property.
+     * Hvem detaljen hjelder, kan inneholde dnr/fnr, TSS-nr eller Orgnr.
      * 
      * @return
      *     possible object is
@@ -103,13 +132,14 @@ public class Detaljdata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getOffnr()
      */
     public void setOffnr(String value) {
         this.offnr = value;
     }
 
     /**
-     * Gets the value of the avleverendeTransaksjonNokkel property.
+     * Avleverende systems identifikasjon av vedtaket
      * 
      * @return
      *     possible object is
@@ -127,13 +157,14 @@ public class Detaljdata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getAvleverendeTransaksjonNokkel()
      */
     public void setAvleverendeTransaksjonNokkel(String value) {
         this.avleverendeTransaksjonNokkel = value;
     }
 
     /**
-     * Gets the value of the meldingKode property.
+     * Meldingkode på varsel/feil
      * 
      * @return
      *     possible object is
@@ -151,13 +182,14 @@ public class Detaljdata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getMeldingKode()
      */
     public void setMeldingKode(String value) {
         this.meldingKode = value;
     }
 
     /**
-     * Gets the value of the alvorlighetsgrad property.
+     * Angir alvorlighetsgraden på varsel/feil
      * 
      * @return
      *     possible object is
@@ -175,13 +207,14 @@ public class Detaljdata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getAlvorlighetsgrad()
      */
     public void setAlvorlighetsgrad(String value) {
         this.alvorlighetsgrad = value;
     }
 
     /**
-     * Gets the value of the tekstMelding property.
+     * Meldingstekst på varsel/feil
      * 
      * @return
      *     possible object is
@@ -199,13 +232,14 @@ public class Detaljdata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getTekstMelding()
      */
     public void setTekstMelding(String value) {
         this.tekstMelding = value;
     }
 
     /**
-     * Gets the value of the tidspunkt property.
+     * Når meldingen ble sendt/mottatt
      * 
      * @return
      *     possible object is
@@ -223,6 +257,7 @@ public class Detaljdata {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getTidspunkt()
      */
     public void setTidspunkt(String value) {
         this.tidspunkt = value;

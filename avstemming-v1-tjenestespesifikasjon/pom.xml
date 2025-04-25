@@ -45,13 +45,9 @@
                                             <wsdl>
                                                 ${basedir}/src/main/resources/wsdl/no/nav/virksomhet/tjenester/avstemming/avstemming.wsdl
                                             </wsdl>
-                                            <wsdlLocation>classpath:wsdl/no/nav/virksomhet/tjenester/avstemming/avstemming.wsdl
+                                            <wsdlLocation>
+                                                classpath:wsdl/no/nav/virksomhet/tjenester/avstemming/avstemming.wsdl
                                             </wsdlLocation>
-                                            <bindingFiles>
-                                                <bindingFile>
-                                                    ${basedir}//src/main/resources/wsdl/no/nav/virksomhet/tjenester/avstemming/v1/Binding.wsdl
-                                                </bindingFile>
-                                            </bindingFiles>
                                         </wsdlOption>
                                     </wsdlOptions>
                                 </configuration>
@@ -65,5 +61,4 @@
             </build>
         </profile>
     </profiles>
-
 </project>

@@ -13,26 +13,26 @@ import jakarta.xml.bind.annotation.XmlType;
 /**
  * Referanse ID 311
  * 
- * <p>Java class for beregning complex type.
+ * <p>Java class for beregning complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="beregning"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="gjelderId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/&gt;
- *         &lt;element name="gjelderNavn" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}navn"/&gt;
- *         &lt;element name="datoBeregnet" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/&gt;
- *         &lt;element name="kodeFaggruppe" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeFaggruppe"/&gt;
- *         &lt;element name="belop" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}belop"/&gt;
- *         &lt;element ref="{http://nav.no/system/os/entiteter/beregningSkjema}beregningsPeriode" maxOccurs="999"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="beregning">
+ *   <complexContent>
+ *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       <sequence>
+ *         <element name="gjelderId" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}fnrOrgnr"/>
+ *         <element name="gjelderNavn" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}navn"/>
+ *         <element name="datoBeregnet" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}dato"/>
+ *         <element name="kodeFaggruppe" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}kodeFaggruppe"/>
+ *         <element name="belop" type="{http://nav.no/system/os/entiteter/typer/simpleTypes}belop"/>
+ *         <element ref="{http://nav.no/system/os/entiteter/beregningSkjema}beregningsPeriode" maxOccurs="999"/>
+ *       </sequence>
+ *     </restriction>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -51,12 +51,20 @@ public class Beregning {
     protected String gjelderId;
     @XmlElement(required = true)
     protected String gjelderNavn;
+    /**
+     * Ved simuleringsberegning gjelder dette datoen beregning vil kjøres på
+     * 
+     */
     @XmlElement(required = true)
     protected String datoBeregnet;
     @XmlElement(required = true)
     protected String kodeFaggruppe;
     @XmlElement(required = true)
     protected BigDecimal belop;
+    /**
+     * Referanse ID 312
+     * 
+     */
     @XmlElement(namespace = "http://nav.no/system/os/entiteter/beregningSkjema", required = true)
     protected List<BeregningsPeriode> beregningsPeriode;
 
@@ -109,7 +117,7 @@ public class Beregning {
     }
 
     /**
-     * Gets the value of the datoBeregnet property.
+     * Ved simuleringsberegning gjelder dette datoen beregning vil kjøres på
      * 
      * @return
      *     possible object is
@@ -127,6 +135,7 @@ public class Beregning {
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getDatoBeregnet()
      */
     public void setDatoBeregnet(String value) {
         this.datoBeregnet = value;
@@ -181,30 +190,35 @@ public class Beregning {
     }
 
     /**
+     * Referanse ID 312
+     * 
      * Gets the value of the beregningsPeriode property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the Jakarta XML Binding object.
-     * This is why there is not a <CODE>set</CODE> method for the beregningsPeriode property.
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the beregningsPeriode property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getBeregningsPeriode().add(newItem);
+     * getBeregningsPeriode().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link BeregningsPeriode }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the beregningsPeriode property.
      */
     public List<BeregningsPeriode> getBeregningsPeriode() {
         if (beregningsPeriode == null) {
-            beregningsPeriode = new ArrayList<BeregningsPeriode>();
+            beregningsPeriode = new ArrayList<>();
         }
         return this.beregningsPeriode;
     }
