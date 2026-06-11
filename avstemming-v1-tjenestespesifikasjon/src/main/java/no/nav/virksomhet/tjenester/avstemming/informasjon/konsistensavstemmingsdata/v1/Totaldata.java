@@ -1,4 +1,3 @@
-
 package no.nav.virksomhet.tjenester.avstemming.informasjon.konsistensavstemmingsdata.v1;
 
 import java.math.BigDecimal;

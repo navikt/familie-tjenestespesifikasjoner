@@ -1,4 +1,3 @@
-
 package no.nav.tilbakekreving.kravgrunnlag.annuller.v1;
 
 import jakarta.xml.bind.annotation.XmlRegistry;

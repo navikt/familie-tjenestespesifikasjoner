@@ -1,4 +1,3 @@
-
 package no.nav.system.os.tjenester.simulerfpservice.simulerfpserviceservicetypes;
 
 import jakarta.xml.bind.annotation.XmlRegistry;

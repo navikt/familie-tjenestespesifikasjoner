@@ -1,4 +1,3 @@
-
 package no.nav.okonomi.tilbakekrevingservice;
 
 import jakarta.xml.bind.annotation.XmlRegistry;

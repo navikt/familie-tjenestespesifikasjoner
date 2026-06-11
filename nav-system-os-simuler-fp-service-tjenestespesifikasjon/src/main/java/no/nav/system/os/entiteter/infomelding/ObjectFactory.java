@@ -1,4 +1,3 @@
-
 package no.nav.system.os.entiteter.infomelding;
 
 import jakarta.xml.bind.annotation.XmlRegistry;

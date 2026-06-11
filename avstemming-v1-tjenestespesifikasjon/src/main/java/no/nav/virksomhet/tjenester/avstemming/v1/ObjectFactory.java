@@ -1,4 +1,3 @@
-
 package no.nav.virksomhet.tjenester.avstemming.v1;
 
 import jakarta.xml.bind.annotation.XmlRegistry;
