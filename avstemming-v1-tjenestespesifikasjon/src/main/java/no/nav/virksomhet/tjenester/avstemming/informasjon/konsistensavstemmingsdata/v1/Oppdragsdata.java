@@ -1,4 +1,3 @@
-
 package no.nav.virksomhet.tjenester.avstemming.informasjon.konsistensavstemmingsdata.v1;
 
 import java.util.ArrayList;
@@ -364,9 +363,9 @@ public class Oppdragsdata {
      * Gets the value of the oppdragsenhetListe property.
      * 
      * <p>This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the oppdragsenhetListe property.</p>
+     * not a snapshot. Therefore, any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a {@code set} method for the oppdragsenhetListe property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
@@ -398,9 +397,9 @@ public class Oppdragsdata {
      * Gets the value of the belopsgrenseListe property.
      * 
      * <p>This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the belopsgrenseListe property.</p>
+     * not a snapshot. Therefore, any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a {@code set} method for the belopsgrenseListe property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
@@ -432,9 +431,9 @@ public class Oppdragsdata {
      * Gets the value of the tekstListe property.
      * 
      * <p>This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the tekstListe property.</p>
+     * not a snapshot. Therefore, any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a {@code set} method for the tekstListe property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
@@ -466,9 +465,9 @@ public class Oppdragsdata {
      * Gets the value of the oppdragslinjeListe property.
      * 
      * <p>This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the oppdragslinjeListe property.</p>
+     * not a snapshot. Therefore, any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a {@code set} method for the oppdragslinjeListe property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:

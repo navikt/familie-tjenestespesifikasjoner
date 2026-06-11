@@ -1,4 +1,3 @@
-
 package no.nav.system.os.tjenester.simulerfpservice.simulerfpserviceservicetypes;
 
 import java.util.ArrayList;
@@ -71,9 +70,9 @@ public class Oppdrag
      * Gets the value of the bilagstype property.
      * 
      * <p>This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the bilagstype property.</p>
+     * not a snapshot. Therefore, any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a {@code set} method for the bilagstype property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
@@ -105,9 +104,9 @@ public class Oppdrag
      * Gets the value of the avstemmingsnokkel property.
      * 
      * <p>This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the avstemmingsnokkel property.</p>
+     * not a snapshot. Therefore, any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a {@code set} method for the avstemmingsnokkel property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
@@ -162,9 +161,9 @@ public class Oppdrag
      * Gets the value of the oppdragslinje property.
      * 
      * <p>This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the oppdragslinje property.</p>
+     * not a snapshot. Therefore, any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a {@code set} method for the oppdragslinje property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:

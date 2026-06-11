@@ -1,4 +1,3 @@
-
 package no.nav.system.os.entiteter.beregningskjema;
 
 import java.math.BigDecimal;

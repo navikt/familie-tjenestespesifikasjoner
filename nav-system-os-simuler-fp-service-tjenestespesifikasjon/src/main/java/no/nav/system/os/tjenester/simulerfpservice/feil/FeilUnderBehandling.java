@@ -1,4 +1,3 @@
-
 package no.nav.system.os.tjenester.simulerfpservice.feil;
 
 import jakarta.xml.bind.annotation.XmlAccessType;

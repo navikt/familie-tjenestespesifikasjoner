@@ -1,4 +1,3 @@
-
 package no.nav.system.os.entiteter.typer.simpletypes;
 
 import jakarta.xml.bind.annotation.XmlEnum;

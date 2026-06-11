@@ -1,4 +1,3 @@
-
 package no.nav.tilbakekreving.kravgrunnlag.annuller.v1;
 
 import java.math.BigInteger;

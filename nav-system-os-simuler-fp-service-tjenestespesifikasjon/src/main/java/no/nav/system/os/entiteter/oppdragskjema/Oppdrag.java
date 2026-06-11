@@ -1,4 +1,3 @@
-
 package no.nav.system.os.entiteter.oppdragskjema;
 
 import java.util.ArrayList;
@@ -409,9 +408,9 @@ public class Oppdrag {
      * Gets the value of the enhet property.
      * 
      * <p>This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the enhet property.</p>
+     * not a snapshot. Therefore, any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a {@code set} method for the enhet property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
@@ -443,9 +442,9 @@ public class Oppdrag {
      * Gets the value of the belopsgrense property.
      * 
      * <p>This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the belopsgrense property.</p>
+     * not a snapshot. Therefore, any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a {@code set} method for the belopsgrense property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
@@ -477,9 +476,9 @@ public class Oppdrag {
      * Gets the value of the tekst property.
      * 
      * <p>This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the tekst property.</p>
+     * not a snapshot. Therefore, any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a {@code set} method for the tekst property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
